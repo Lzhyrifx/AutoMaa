@@ -17,6 +17,9 @@
 ## 模拟器([关于模拟器支持情况和ADB设置](https://maa.plus/docs/1.3-%E6%A8%A1%E6%8B%9F%E5%99%A8%E6%94%AF%E6%8C%81.html))
 - 建议使用[蓝叠模拟器5国际版](https://wp-s.bluestacks.com/)
 - 如果双模式同时使用,推荐[蓝叠模拟器5国际版](https://wp-s.bluestacks.com/)和[夜神模拟器](https://www.yeshen.com/)
+- 请在Maa设置中设置模拟器路径
+  -蓝叠5默认位置C:\Program Files\BlueStacks_nxt\HD-Player.exe
+  -夜神默认位置D:\Program Files\Nox\bin\Nox.exe
 ## 定时任务
 - 在文件资源管理器右键此电脑,选择任务计划程序,导入任务([Ordinary](https://github.com/Lzhyrifx/AutoMaa/blob/master/Python/Ordinary/ScheduledTask/OrdinaryAutoMaa.xml)&[Special](https://github.com/Lzhyrifx/AutoMaa/blob/master/Python/Special/ScheduledTask/SpecialAutoMaa.xml))
 - 注意:每次更改任务计划都需要重新选择用户和组,否则会报参数错误<br>
@@ -33,12 +36,12 @@
 ## 内网穿透(默认使用[星空内网穿透](https://frp.starryfrp.com/))
 - 创建隧道,除了自定义端口外其他默认
 ## 启用内网穿透
-- 打开AutoMaa/Web/AHKhttp-master/AHKhttp-master/example.ahk(无报错则启动成功)
-- 打开AutoMaa/Web/frpc_windows_amd64/Start.bat
+- 打开D:\AutoMaa\Web\AHKhttp-master\AHKhttp-master\example.ahk(无报错则启动成功)
+- 打开D:\AutoMaa\Web\frpc_windows_amd64\Start.bat
 - [获取启动命令](https://frp.starryfrp.com/console/Proxies)并输入命令行
-- 访问网站即可远程控制,如:http://xxx(隧道名).starryfrp.com:XXXXX(端口名)/SpecialTest
+- 访问网站即可远程控制,如:http://xxx(隧道名).starryfrp.com:XXXXX(端口名)/SpecialTest(网页返回Success则远程控制成功)
 # 注意事项
 - 目前暂时无配置文件来设置模拟器&python等路径,大部分使用的是相对路径,有些只能使用绝对路径(待更新)
 - 建议将AutoMaa解压至D盘
 - Maa自动更新有概率使此次无法正常上号(待解决)
-- 
+- 换模拟器会导致Kill.py无法使用,内含进程检测
