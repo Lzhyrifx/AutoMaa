@@ -35,7 +35,10 @@ def start(x):
 
 
 def remove(x):
-    os.remove(x)
+    try:
+        os.remove(x)
+    except FileNotFoundError:
+        pass
 
 
 # 定时任务

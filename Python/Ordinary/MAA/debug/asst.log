@@ -1,0 +1,126 @@
+[2023-02-22 22:56:20.455][TRC][Px2cbc][Tx1444] -----------------------------
+[2023-02-22 22:56:20.455][TRC][Px2cbc][Tx1444] MaaCore Process Start
+[2023-02-22 22:56:20.455][TRC][Px2cbc][Tx1444] Version v4.11.0-beta.2
+[2023-02-22 22:56:20.455][TRC][Px2cbc][Tx1444] Built at Feb 21 2023 13:31:05
+[2023-02-22 22:56:20.455][TRC][Px2cbc][Tx1444] User Dir D:\AutoMaa\Python\Ordinary\MAA
+[2023-02-22 22:56:20.455][TRC][Px2cbc][Tx1444] -----------------------------
+[2023-02-22 22:56:20.455][TRC][Px2cbc][Tx1444] asst::ResourceLoader::load | enter
+[2023-02-22 22:56:20.455][TRC][Px2cbc][Tx3644] LoadResourceAndCheckRet GeneralConfig | enter
+[2023-02-22 22:56:20.455][TRC][Px2cbc][Tx2a88] LoadResourceAndCheckRet TilePack | enter
+[2023-02-22 22:56:20.456][TRC][Px2cbc][Tx3644] asst::AbstractConfig::load | enter
+[2023-02-22 22:56:20.456][TRC][Px2cbc][Tx2a88] asst::TilePack::load | enter
+[2023-02-22 22:56:20.456][INF][Px2cbc][Tx2a88] load D:\AutoMaa\Python\Ordinary\MAA\resource\Arknights-Tile-Pos
+[2023-02-22 22:56:20.456][TRC][Px2cbc][Tx275c] LoadResourceAndCheckRet WordOcr | enter
+[2023-02-22 22:56:20.456][INF][Px2cbc][Tx3644] load D:\AutoMaa\Python\Ordinary\MAA\resource\config.json
+[2023-02-22 22:56:20.456][TRC][Px2cbc][Tx275c] asst::OcrPack::OcrPack | enter
+[2023-02-22 22:56:20.456][TRC][Px2cbc][Tx275c] asst::OcrPack::OcrPack | leave, 0 ms
+[2023-02-22 22:56:20.456][TRC][Px2cbc][Tx275c] asst::OcrPack::load | enter
+[2023-02-22 22:56:20.456][INF][Px2cbc][Tx275c] load D:\AutoMaa\Python\Ordinary\MAA\resource\PaddleOCR
+[2023-02-22 22:56:20.456][TRC][Px2cbc][Tx3644] asst::AbstractConfig::load | leave, 0 ms
+[2023-02-22 22:56:20.456][TRC][Px2cbc][Tx3644] LoadResourceAndCheckRet GeneralConfig | leave, 0 ms
+[2023-02-22 22:56:20.456][TRC][Px2cbc][Tx3644] LoadResourceAndCheckRet RecruitConfig | enter
+[2023-02-22 22:56:20.456][TRC][Px2cbc][Tx3644] asst::AbstractConfig::load | enter
+[2023-02-22 22:56:20.456][INF][Px2cbc][Tx3644] load D:\AutoMaa\Python\Ordinary\MAA\resource\recruitment.json
+[2023-02-22 22:56:20.457][TRC][Px2cbc][Tx3644] asst::RecruitConfig::clear | enter
+[2023-02-22 22:56:20.457][TRC][Px2cbc][Tx3644] asst::RecruitConfig::clear | leave, 0 ms
+[2023-02-22 22:56:20.457][TRC][Px2cbc][Tx3644] asst::AbstractConfig::load | leave, 1 ms
+[2023-02-22 22:56:20.457][TRC][Px2cbc][Tx3644] LoadResourceAndCheckRet RecruitConfig | leave, 1 ms
+[2023-02-22 22:56:20.457][TRC][Px2cbc][Tx3644] LoadResourceAndCheckRet StageDropsConfig | enter
+[2023-02-22 22:56:20.457][TRC][Px2cbc][Tx3644] asst::AbstractConfig::load | enter
+[2023-02-22 22:56:20.457][INF][Px2cbc][Tx3644] load D:\AutoMaa\Python\Ordinary\MAA\resource\stages.json
+[2023-02-22 22:56:20.501][TRC][Px2cbc][Tx3644] asst::AbstractConfig::load | leave, 43 ms
+[2023-02-22 22:56:20.501][TRC][Px2cbc][Tx3644] LoadResourceAndCheckRet StageDropsConfig | leave, 43 ms
+[2023-02-22 22:56:20.501][TRC][Px2cbc][Tx3644] LoadResourceAndCheckRet RoguelikeCopilotConfig | enter
+[2023-02-22 22:56:20.501][TRC][Px2cbc][Tx3644] asst::AbstractConfig::load | enter
+[2023-02-22 22:56:20.501][INF][Px2cbc][Tx3644] load D:\AutoMaa\Python\Ordinary\MAA\resource\roguelike\copilot.json
+[2023-02-22 22:56:20.502][TRC][Px2cbc][Tx3644] asst::AbstractConfig::load | leave, 1 ms
+[2023-02-22 22:56:20.502][TRC][Px2cbc][Tx3644] LoadResourceAndCheckRet RoguelikeCopilotConfig | leave, 1 ms
+[2023-02-22 22:56:20.502][TRC][Px2cbc][Tx3644] LoadResourceAndCheckRet RoguelikeRecruitConfig | enter
+[2023-02-22 22:56:20.502][TRC][Px2cbc][Tx3644] asst::AbstractConfig::load | enter
+[2023-02-22 22:56:20.502][INF][Px2cbc][Tx3644] load D:\AutoMaa\Python\Ordinary\MAA\resource\roguelike\recruitment.json
+[2023-02-22 22:56:20.503][TRC][Px2cbc][Tx3644] asst::AbstractConfig::load | leave, 0 ms
+[2023-02-22 22:56:20.503][TRC][Px2cbc][Tx3644] LoadResourceAndCheckRet RoguelikeRecruitConfig | leave, 0 ms
+[2023-02-22 22:56:20.503][TRC][Px2cbc][Tx3644] LoadResourceAndCheckRet RoguelikeShoppingConfig | enter
+[2023-02-22 22:56:20.503][TRC][Px2cbc][Tx3644] asst::AbstractConfig::load | enter
+[2023-02-22 22:56:20.503][INF][Px2cbc][Tx3644] load D:\AutoMaa\Python\Ordinary\MAA\resource\roguelike\shopping.json
+[2023-02-22 22:56:20.504][TRC][Px2cbc][Tx3644] asst::AbstractConfig::load | leave, 0 ms
+[2023-02-22 22:56:20.504][TRC][Px2cbc][Tx3644] LoadResourceAndCheckRet RoguelikeShoppingConfig | leave, 0 ms
+[2023-02-22 22:56:20.504][TRC][Px2cbc][Tx3644] LoadResourceAndCheckRet BattleDataConfig | enter
+[2023-02-22 22:56:20.504][TRC][Px2cbc][Tx3644] asst::AbstractConfig::load | enter
+[2023-02-22 22:56:20.504][INF][Px2cbc][Tx3644] load D:\AutoMaa\Python\Ordinary\MAA\resource\battle_data.json
+[2023-02-22 22:56:20.506][TRC][Px2cbc][Tx3644] asst::AbstractConfig::load | leave, 1 ms
+[2023-02-22 22:56:20.506][TRC][Px2cbc][Tx3644] LoadResourceAndCheckRet BattleDataConfig | leave, 1 ms
+[2023-02-22 22:56:20.506][TRC][Px2cbc][Tx3644] LoadResourceWithTemplAndCheckRet TaskData | enter
+[2023-02-22 22:56:20.506][TRC][Px2cbc][Tx3644] asst::AbstractConfig::load | enter
+[2023-02-22 22:56:20.506][INF][Px2cbc][Tx3644] load D:\AutoMaa\Python\Ordinary\MAA\resource\tasks.json
+[2023-02-22 22:56:20.508][TRC][Px2cbc][Tx3644] asst::TaskData::parse | enter
+[2023-02-22 22:56:20.515][TRC][Px2cbc][Tx3644] asst::TaskData::parse | leave, 6 ms
+[2023-02-22 22:56:20.515][TRC][Px2cbc][Tx3644] asst::AbstractConfig::load | leave, 9 ms
+[2023-02-22 22:56:20.516][TRC][Px2cbc][Tx3644] asst::TemplResource::load | enter
+[2023-02-22 22:56:20.516][INF][Px2cbc][Tx3644] load D:\AutoMaa\Python\Ordinary\MAA\resource\template
+[2023-02-22 22:56:20.703][TRC][Px2cbc][Tx275c] asst::OcrPack::load | leave, 247 ms
+[2023-02-22 22:56:20.703][TRC][Px2cbc][Tx275c] LoadResourceAndCheckRet WordOcr | leave, 247 ms
+[2023-02-22 22:56:20.703][TRC][Px2cbc][Tx275c] LoadResourceAndCheckRet CharOcr | enter
+[2023-02-22 22:56:20.703][TRC][Px2cbc][Tx275c] asst::OcrPack::OcrPack | enter
+[2023-02-22 22:56:20.703][TRC][Px2cbc][Tx275c] asst::OcrPack::OcrPack | leave, 0 ms
+[2023-02-22 22:56:20.703][TRC][Px2cbc][Tx275c] asst::OcrPack::load | enter
+[2023-02-22 22:56:20.703][INF][Px2cbc][Tx275c] load D:\AutoMaa\Python\Ordinary\MAA\resource\PaddleCharOCR
+[2023-02-22 22:56:20.914][TRC][Px2cbc][Tx275c] asst::OcrPack::load | leave, 210 ms
+[2023-02-22 22:56:20.914][TRC][Px2cbc][Tx275c] LoadResourceAndCheckRet CharOcr | leave, 211 ms
+[2023-02-22 22:56:20.972][TRC][Px2cbc][Tx2a88] asst::TilePack::load | leave, 516 ms
+[2023-02-22 22:56:20.972][TRC][Px2cbc][Tx2a88] LoadResourceAndCheckRet TilePack | leave, 516 ms
+[2023-02-22 22:56:21.060][TRC][Px2cbc][Tx3644] asst::TemplResource::load | leave, 545 ms
+[2023-02-22 22:56:21.060][TRC][Px2cbc][Tx3644] LoadResourceWithTemplAndCheckRet TaskData | leave, 554 ms
+[2023-02-22 22:56:21.060][TRC][Px2cbc][Tx3644] LoadResourceWithTemplAndCheckRet InfrastConfig | enter
+[2023-02-22 22:56:21.060][TRC][Px2cbc][Tx3644] asst::AbstractConfig::load | enter
+[2023-02-22 22:56:21.060][INF][Px2cbc][Tx3644] load D:\AutoMaa\Python\Ordinary\MAA\resource\infrast.json
+[2023-02-22 22:56:21.063][TRC][Px2cbc][Tx3644] asst::AbstractConfig::load | leave, 2 ms
+[2023-02-22 22:56:21.063][TRC][Px2cbc][Tx3644] asst::TemplResource::load | enter
+[2023-02-22 22:56:21.063][INF][Px2cbc][Tx3644] load D:\AutoMaa\Python\Ordinary\MAA\resource\template\infrast
+[2023-02-22 22:56:21.081][TRC][Px2cbc][Tx3644] asst::TemplResource::load | leave, 17 ms
+[2023-02-22 22:56:21.081][TRC][Px2cbc][Tx3644] LoadResourceWithTemplAndCheckRet InfrastConfig | leave, 20 ms
+[2023-02-22 22:56:21.081][TRC][Px2cbc][Tx3644] LoadResourceWithTemplAndCheckRet ItemConfig | enter
+[2023-02-22 22:56:21.081][TRC][Px2cbc][Tx3644] asst::AbstractConfig::load | enter
+[2023-02-22 22:56:21.081][INF][Px2cbc][Tx3644] load D:\AutoMaa\Python\Ordinary\MAA\resource\item_index.json
+[2023-02-22 22:56:21.081][TRC][Px2cbc][Tx3644] asst::ItemConfig::parse | enter
+[2023-02-22 22:56:21.082][TRC][Px2cbc][Tx3644] asst::ItemConfig::parse | leave, 0 ms
+[2023-02-22 22:56:21.082][TRC][Px2cbc][Tx3644] asst::AbstractConfig::load | leave, 0 ms
+[2023-02-22 22:56:21.082][TRC][Px2cbc][Tx3644] asst::TemplResource::load | enter
+[2023-02-22 22:56:21.082][INF][Px2cbc][Tx3644] load D:\AutoMaa\Python\Ordinary\MAA\resource\template\items
+[2023-02-22 22:56:21.169][TRC][Px2cbc][Tx3644] asst::TemplResource::load | leave, 87 ms
+[2023-02-22 22:56:21.169][TRC][Px2cbc][Tx3644] LoadResourceWithTemplAndCheckRet ItemConfig | leave, 88 ms
+[2023-02-22 22:56:21.169][TRC][Px2cbc][Tx3644] LoadCacheWithoutRet AvatarCacheManager | enter
+[2023-02-22 22:56:21.169][TRC][Px2cbc][Tx3644] asst::AvatarCacheManager::load | enter
+[2023-02-22 22:56:21.169][INF][Px2cbc][Tx3644] load D:\AutoMaa\Python\Ordinary\MAA\cache\avatars
+[2023-02-22 22:56:21.169][TRC][Px2cbc][Tx3644] D:\AutoMaa\Python\Ordinary\MAA\cache\avatars\海沫.png
+[2023-02-22 22:56:21.169][TRC][Px2cbc][Tx3644] D:\AutoMaa\Python\Ordinary\MAA\cache\avatars\蜜莓.png
+[2023-02-22 22:56:21.169][TRC][Px2cbc][Tx3644] D:\AutoMaa\Python\Ordinary\MAA\cache\avatars\预备干员-术师.png
+[2023-02-22 22:56:21.169][TRC][Px2cbc][Tx3644] D:\AutoMaa\Python\Ordinary\MAA\cache\avatars\骰子.png
+[2023-02-22 22:56:21.170][TRC][Px2cbc][Tx3644] asst::AvatarCacheManager::load | leave, 0 ms
+[2023-02-22 22:56:21.170][TRC][Px2cbc][Tx3644] LoadCacheWithoutRet AvatarCacheManager | leave, 0 ms
+[2023-02-22 22:56:21.170][TRC][Px2cbc][Tx1444] asst::ResourceLoader::load | leave, 715 ms
+[2023-02-22 22:56:21.170][TRC][Px2cbc][Tx1444] asst::Assistant::Assistant | enter
+[2023-02-22 22:56:21.170][TRC][Px2cbc][Tx1444] asst::Controller::Controller | enter
+[2023-02-22 22:56:21.170][TRC][Px2cbc][Tx1444] asst::Controller::Controller | leave, 0 ms
+[2023-02-22 22:56:21.170][TRC][Px2cbc][Tx1444] asst::Assistant::Assistant | leave, 0 ms
+[2023-02-22 22:56:21.170][TRC][Px2cbc][Tx2090] asst::Assistant::working_proc | enter
+[2023-02-22 22:56:21.171][INF][Px2cbc][Tx1444] asst::Assistant::set_instance_option | key 2 value minitouch
+[2023-02-22 22:56:21.171][INF][Px2cbc][Tx1444] asst::Assistant::set_instance_option | key 3 value 0
+[2023-02-22 22:56:21.171][INF][Px2cbc][Tx1444] asst::Assistant::set_instance_option | key 4 value 0
+[2023-02-22 22:56:21.307][GUI][Px2cbc][Tx1444] Try to start emulator: 
+fileName: C:\Program Files\BlueStacks_nxt\HD-Player.exe
+arguments: 
+[2023-02-22 22:56:25.802][GUI][Px2cbc][Tx1444] Try minimizing the emulator
+[2023-02-22 22:56:26.939][TRC][Px2cbc][Tx7a4] asst::Assistant::~Assistant | enter
+[2023-02-22 22:56:26.939][TRC][Px2cbc][Tx2090] asst::Assistant::working_proc | leave, 5768 ms
+[2023-02-22 22:56:26.939][TRC][Px2cbc][Tx51c] asst::Assistant::msg_proc | leave, 5768 ms
+[2023-02-22 22:56:26.939][TRC][Px2cbc][Tx7a4] asst::Assistant::~Assistant | leave, 0 ms
+[2023-02-22 22:56:26.939][TRC][Px2cbc][Tx7a4] asst::Controller::~Controller | enter
+[2023-02-22 22:56:26.939][TRC][Px2cbc][Tx7a4] asst::Controller::release_minitouch | enter
+[2023-02-22 22:56:26.939][TRC][Px2cbc][Tx7a4] asst::Controller::release_minitouch | leave, 0 ms
+[2023-02-22 22:56:26.939][TRC][Px2cbc][Tx7a4] asst::Controller::make_instance_inited | 0 , pre m_inited = 0 , pre m_instance_count = 0
+[2023-02-22 22:56:26.939][TRC][Px2cbc][Tx7a4] asst::Controller::~Controller | leave, 0 ms
+[2023-02-22 22:56:26.943][TRC][Px2cbc][Tx1d98] asst::OcrPack::~OcrPack | enter
+[2023-02-22 22:56:26.943][TRC][Px2cbc][Tx1d98] asst::OcrPack::~OcrPack | leave, 0 ms
+[2023-02-22 22:56:26.950][TRC][Px2cbc][Tx1d98] asst::OcrPack::~OcrPack | enter
+[2023-02-22 22:56:26.950][TRC][Px2cbc][Tx1d98] asst::OcrPack::~OcrPack | leave, 0 ms

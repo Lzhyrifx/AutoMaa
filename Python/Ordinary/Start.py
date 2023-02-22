@@ -26,7 +26,10 @@ def test(x, y):  # 判断进程是否存活
 
 
 def remove(x):
-    os.remove(x)
+    try:
+        os.remove(x)
+    except FileNotFoundError:
+        pass
 
 
 if test("MeoAsstGui.exe", Maa):
