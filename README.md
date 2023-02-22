@@ -24,9 +24,18 @@
 - 如果希望AutoMaa在后台使用,可以勾选"不管用户是否登录都要运行"(此功能不推荐,模拟器还是会最小化前台,并且关闭Maa只能通过任务管理器终止进程或使用AutoMaa的Kill.py)
 - 自定义任务计划,建议启动程序设置起始于(文件夹),然后再启动程序<br>
 ![Image text](https://github.com/Lzhyrifx/AutoMaa/blob/master/Demonstrate/Start.png)
-## 内网穿透(默认使用[星空内网穿透](https://frp.starryfrp.com/))
-# 注意事项
-- 目前暂时无配置文件来设置模拟器&python等路径(大部分使用的是相对路径,有些只能使用绝对路径)
+# 远程控制
+## AutoHotkey
+- 下载[AutoHotkey](https://www.autohotkey.com/)V1.1
 - [AHK文件设置](https://github.com/Lzhyrifx/AutoMaa/blob/master/Web/AHKhttp-master/AHKhttp-master/example.ahk)
   - 21行是自定义端口,可更改(不和默认端口冲突即可)
   - 86行是AHKsock.ahk位置,需要根据文件位置更改
+## 内网穿透(默认使用[星空内网穿透](https://frp.starryfrp.com/))
+- 创建隧道,除了自定义端口外其他默认
+## 启用内网穿透
+- 打开AutoMaa/Web/AHKhttp-master/AHKhttp-master/example.ahk(无报错则启动成功)
+- 打开AutoMaa/Web/frpc_windows_amd64/Start.bat
+- https://frp.starryfrp.com/console/Proxies获取启动命令并输入命令行
+# 注意事项
+- 目前暂时无配置文件来设置模拟器&python等路径(大部分使用的是相对路径,有些只能使用绝对路径)
+
