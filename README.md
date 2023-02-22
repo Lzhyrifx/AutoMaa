@@ -38,5 +38,5 @@
 - [获取启动命令](https://frp.starryfrp.com/console/Proxies)并输入命令行
 - 访问网站即可远程控制,如:http://xxx(隧道名).starryfrp.com:XXXXX(端口名)/SpecialTest
 # 注意事项
-- 目前暂时无配置文件来设置模拟器&python等路径(大部分使用的是相对路径,有些只能使用绝对路径)
+- 目前暂时无配置文件来设置模拟器&python等路径,大部分使用的是相对路径,有些只能使用绝对路径(待更新)
 
