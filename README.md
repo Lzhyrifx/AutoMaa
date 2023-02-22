@@ -20,3 +20,4 @@
 ## 定时任务
 - 在任务管理器右键此电脑,选择任务计划程序,导入任务([Ordinary](https://github.com/Lzhyrifx/AutoMaa/blob/master/Python/Ordinary/ScheduledTask/OrdinaryAutoMaa.xml)&[Special](https://github.com/Lzhyrifx/AutoMaa/blob/master/Python/Special/ScheduledTask/SpecialAutoMaa.xml))
 - 注意:每次更改任务计划都需要重新选择用户和组,否则会报参数错误
+![Image text](https://github.com/Lzhyrifx/AutoMaa/blob/master/Demonstrate/TaskScheduler.png)
