@@ -24,3 +24,7 @@
 - 如果希望AutoMaa在后台使用,可以勾选"不管用户是否登录都要运行"(此功能不推荐,模拟器还是会最小化前台,并且关闭Maa只能通过任务管理器终止进程或使用AutoMaa的Kill.py)
 - 自定义任务计划,建议启动程序设置起始于(文件夹),然后再启动程序<br>
 ![Image text](https://github.com/Lzhyrifx/AutoMaa/blob/master/Demonstrate/Start.png)
+# 注意事项
+- 目前暂时无配置文件来设置模拟器&python等路径(大部分使用的是相对路径,有些只能使用绝对路径)
+- AHK文件设置
+-- 1
