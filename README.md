@@ -1,4 +1,4 @@
 # AutoMaa
-AutoMaa
-用于Maa定时执行任务以及远程控制
-包括Ordinary(非限制)和Special(限制)版
+基于MaaAssistantArknights(https://github.com/Lzhyrifx/MaaAssistantArknights)的附属
+## 定时执行任务
+包括Ordinary(非防沉迷)和Special(防沉迷)版
