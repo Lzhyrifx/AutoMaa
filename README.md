@@ -6,3 +6,7 @@
 - Ordinary:无防沉迷
 - Special:防沉迷
 ## 远程控制
+ 通过[AutoHotkey](https://github.com/AutoHotkey/AutoHotkey)来搭建内网
+ 并且通过内网穿透以达到远程控制(默认使用的是[星空内网穿透](https://frp.starryfrp.com/))
+ ### 目前功能
+ - 远程打开maa
