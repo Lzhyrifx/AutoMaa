@@ -10,13 +10,16 @@
  通过[AutoHotkey](https://github.com/AutoHotkey/AutoHotkey)来搭建内网<br>
  并且通过内网穿透以达到远程控制(默认使用的是[星空内网穿透](https://frp.starryfrp.com/))
 ### 主要功能
-- 远程打开Maa
-- 远程关闭Maa
+- 远程打开Maa(Start.py)
+- 远程关闭Maa(Kill.py)
 - 远程查看Maa日志
 # 使用说明
 ## 模拟器([关于模拟器支持情况和ADB设置](https://maa.plus/docs/1.3-%E6%A8%A1%E6%8B%9F%E5%99%A8%E6%94%AF%E6%8C%81.html))
 - 建议使用[蓝叠模拟器5国际版](https://wp-s.bluestacks.com/)
 - 如果双模式同时使用,推荐[蓝叠模拟器5国际版](https://wp-s.bluestacks.com/)和[夜神模拟器](https://www.yeshen.com/)<br>
 ## 定时任务
-- 在任务管理器右键此电脑,选择任务计划程序,导入任务([Ordinary](https://github.com/Lzhyrifx/AutoMaa/blob/master/Python/Ordinary/ScheduledTask/OrdinaryAutoMaa.xml)&[Special](https://github.com/Lzhyrifx/AutoMaa/blob/master/Python/Special/ScheduledTask/SpecialAutoMaa.xml))
+- 在文件资源管理器右键此电脑,选择任务计划程序,导入任务([Ordinary](https://github.com/Lzhyrifx/AutoMaa/blob/master/Python/Ordinary/ScheduledTask/OrdinaryAutoMaa.xml)&[Special](https://github.com/Lzhyrifx/AutoMaa/blob/master/Python/Special/ScheduledTask/SpecialAutoMaa.xml))
 - 注意:每次更改任务计划都需要重新选择用户和组,否则会报参数错误
+![Image text](https://github.com/Lzhyrifx/AutoMaa/blob/master/Demonstrate/TaskScheduler.png)
+- 如果希望AutoMaa在后台使用,可以勾选"不管用户是否登录都要运行"(此功能不推荐,模拟器还是会最小化前台,并且关闭Maa只能通过任务管理器终止进程或使用AutoMaa的Kill.py)
+- 自定义任务计划,建议启动程序设置起始于(文件夹),然后在启动程序
