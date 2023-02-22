@@ -19,8 +19,8 @@
 - 如果双模式同时使用,推荐[蓝叠模拟器5国际版](https://wp-s.bluestacks.com/)和[夜神模拟器](https://www.yeshen.com/)<br>
 ## 定时任务
 - 在文件资源管理器右键此电脑,选择任务计划程序,导入任务([Ordinary](https://github.com/Lzhyrifx/AutoMaa/blob/master/Python/Ordinary/ScheduledTask/OrdinaryAutoMaa.xml)&[Special](https://github.com/Lzhyrifx/AutoMaa/blob/master/Python/Special/ScheduledTask/SpecialAutoMaa.xml))
-- 注意:每次更改任务计划都需要重新选择用户和组,否则会报参数错误
+- 注意:每次更改任务计划都需要重新选择用户和组,否则会报参数错误<br>
 ![Image text](https://github.com/Lzhyrifx/AutoMaa/blob/master/Demonstrate/TaskScheduler.png)
 - 如果希望AutoMaa在后台使用,可以勾选"不管用户是否登录都要运行"(此功能不推荐,模拟器还是会最小化前台,并且关闭Maa只能通过任务管理器终止进程或使用AutoMaa的Kill.py)
-- 自定义任务计划,建议启动程序设置起始于(文件夹),然后再启动程序
+- 自定义任务计划,建议启动程序设置起始于(文件夹),然后再启动程序<br>
 ![Image text](https://github.com/Lzhyrifx/AutoMaa/blob/master/Demonstrate/Start.png)
