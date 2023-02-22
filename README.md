@@ -9,6 +9,7 @@
 ## 远程控制
  通过[AutoHotkey](https://github.com/AutoHotkey/AutoHotkey)来搭建内网<br>
  并且通过内网穿透以达到远程控制(默认使用的是[星空内网穿透](https://frp.starryfrp.com/))
+ AHK稳定性一般,之后可能会更换
 ### 主要功能
 - 远程打开Maa(Start.py)
 - 远程关闭Maa(Kill.py)
