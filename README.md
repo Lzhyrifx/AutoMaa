@@ -14,7 +14,7 @@
 - 远程关闭Maa
 - 远程查看Maa日志
 # 使用说明
-## 需要下载模拟器[关于模拟器支持情况和ADB设置](https://maa.plus/docs/1.3-%E6%A8%A1%E6%8B%9F%E5%99%A8%E6%94%AF%E6%8C%81.html)
+## 需要下载模拟器[(关于模拟器支持情况和ADB设置)](https://maa.plus/docs/1.3-%E6%A8%A1%E6%8B%9F%E5%99%A8%E6%94%AF%E6%8C%81.html)
 - 建议使用[蓝叠模拟器5国际版](https://wp-s.bluestacks.com/)
 - 如果双模式同时使用,推荐[蓝叠模拟器5国际版](https://wp-s.bluestacks.com/)和[夜神模拟器](https://www.yeshen.com/)<br>
 
