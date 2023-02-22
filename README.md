@@ -29,7 +29,7 @@
 ![Image text](https://github.com/Lzhyrifx/AutoMaa/blob/master/Demonstrate/Start.png)
 # 远程控制
 ## AutoHotkey
-- 下载[AutoHotkey](https://www.autohotkey.com/)V1.1
+- 下载[AutoHotkey](https://www.autohotkey.com/)v1.1
 - [AHK文件设置](https://github.com/Lzhyrifx/AutoMaa/blob/master/Web/AHKhttp-master/AHKhttp-master/example.ahk)
   - 21行是自定义端口,可更改(不和默认端口冲突即可)
   - 86行是AHKsock.ahk位置,需要根据文件位置更改
@@ -41,7 +41,7 @@
 - [获取启动命令](https://frp.starryfrp.com/console/Proxies)并输入命令行
 - 访问网站即可远程控制,如:http://xxx(隧道名).starryfrp.com:XXXXX(端口名)/SpecialTest(网页返回Success则远程控制成功)
 # 注意事项
-- 目前暂时无配置文件来设置模拟器&python等路径,大部分使用的是相对路径,有些只能使用绝对路径(待更新)
+- 目前暂时无配置文件来设置模拟器&Python等路径,大部分使用的是相对路径,有些只能使用绝对路径(待更新)
 - 建议将AutoMaa解压至D盘
 - Maa自动更新有概率使此次无法正常上号(待解决)
 - 换模拟器会导致Kill.py无法使用,内含进程检测
