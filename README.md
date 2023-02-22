@@ -16,7 +16,7 @@
 # 使用说明
 ## 模拟器([关于模拟器支持情况和ADB设置](https://maa.plus/docs/1.3-%E6%A8%A1%E6%8B%9F%E5%99%A8%E6%94%AF%E6%8C%81.html))
 - 建议使用[蓝叠模拟器5国际版](https://wp-s.bluestacks.com/)
-- 如果双模式同时使用,推荐[蓝叠模拟器5国际版](https://wp-s.bluestacks.com/)和[夜神模拟器](https://www.yeshen.com/)<br>
+- 如果双模式同时使用,推荐[蓝叠模拟器5国际版](https://wp-s.bluestacks.com/)和[夜神模拟器](https://www.yeshen.com/)
 ## 定时任务
 - 在文件资源管理器右键此电脑,选择任务计划程序,导入任务([Ordinary](https://github.com/Lzhyrifx/AutoMaa/blob/master/Python/Ordinary/ScheduledTask/OrdinaryAutoMaa.xml)&[Special](https://github.com/Lzhyrifx/AutoMaa/blob/master/Python/Special/ScheduledTask/SpecialAutoMaa.xml))
 - 注意:每次更改任务计划都需要重新选择用户和组,否则会报参数错误<br>
@@ -40,3 +40,5 @@
 # 注意事项
 - 目前暂时无配置文件来设置模拟器&python等路径,大部分使用的是相对路径,有些只能使用绝对路径(待更新)
 - 建议将AutoMaa解压至D盘
+- Maa自动更新有概率使此次无法正常上号(待解决)
+- 
