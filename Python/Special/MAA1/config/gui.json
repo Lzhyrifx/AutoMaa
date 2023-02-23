@@ -89,9 +89,9 @@
   "GUI.Position.Top": "235",
   "GUI.Size.Width": "800",
   "GUI.Size.Height": "600",
-  "VersionUpdate.name": "",
-  "VersionUpdate.body": "",
-  "VersionUpdate.package": "",
+  "VersionUpdate.name": "v4.11.0",
+  "VersionUpdate.body": "## v4.11.0-beta.2\n\n- 更新 `吾导先路` 活动关卡资源、导航 @MistEO @ABA2396\n- 优化 刷理智 主界面设置，更改为实时生效 @ABA2396\n- 修复 基建 宿舍复查识别错误 @MistEO\n- 修复 macOS GUI 编队错误 @hguandl\n- 修复 界面 托盘不显示的问题 @ABA2396\n- 迁移 文档 至官网 @ABA2396\n\n### For overseas\n\n- Updated translation for YostarJP @wallsman\n\n\n## v4.11.0-beta.1\n\n- 重构 生息演算，支持黑市 npc 对话，支持刷粗制赤金 @WLLEGit\n- 新增 刷理智 吃 48 小时、60分钟 临期理智药功能 @bigqiao\n- 优化 基建 复核干员是否正确选择 @fearlessxjdx @MistEO @ABA2396\n- 优化 信用购物 默认选项 @sakuraxp\n- 优化 牛牛喝酒 彩蛋 @MistEO\n- 修复 战斗中 干员头像识别错误 @MistEO\n- 修复 界面 崩溃问题 @ChingCdesu @ABA2396 @lhhxxxxx\n- 修复 界面 adb 自动检测错误 @lanhao34\n- 修复 界面 托盘不显示问题 @ChingCdesu\n- 修复 `春分` 故事集 关卡上传企鹅错误 @MistEO\n- 修复 抄作业 神秘代码无法使用的问题 @zzyyyl\n- 修复 抄作业 干员名识别错误 @cenfusheng\n- 迁移 文档 至[官网](https://maa.plus/docs/)，主仓库内不再更新 @ABA2396\n\n\n**Full Changelog**: [v4.10.10 -> v4.11.0](https://github.com/MaaAssistantArknights/MaaAssistantArknights/compare/v4.10.10...v4.11.0)",
+  "VersionUpdate.package": "MAAComponent-OTA-v4.11.0-beta.2_v4.11.0-win-x64.zip",
   "MainFunction.ActionAfterCompleted": "ExitEmulatorAndSelf",
   "Mall.CreditFirstListNew": "招聘许可；龙门币；加急许可",
   "Start.MinimizingStartup": "True",
@@ -104,5 +104,5 @@
   "Start.RunDirectly": "True",
   "Start.StartEmulator": "True",
   "VersionUpdate.UseAria2": "True",
-  "Start.EmulatorWaitSeconds": "40"
+  "Start.EmulatorWaitSeconds": "60"
 }
