@@ -85,8 +85,8 @@
   "GUI.Monitor.Number": "\\\\.\\DISPLAY1",
   "GUI.Monitor.Width": "1920",
   "GUI.Monitor.Height": "1080",
-  "GUI.Position.Left": "838",
-  "GUI.Position.Top": "369",
+  "GUI.Position.Left": "1030",
+  "GUI.Position.Top": "321",
   "GUI.Size.Width": "800",
   "GUI.Size.Height": "600",
   "VersionUpdate.name": "",
@@ -101,6 +101,6 @@
   "Roguelike.StopWhenInvestmentFull": "True",
   "Start.RunDirectly": "True",
   "Start.StartEmulator": "True",
-  "Start.EmulatorWaitSeconds": "40",
+  "Start.EmulatorWaitSeconds": "60",
   "VersionUpdate.UseAria2": "True"
 }
