@@ -72,7 +72,7 @@ OrdinaryKill(ByRef req, ByRef res) {
 }
 
 OrdinaryLog(ByRef req, ByRef res) {
-    FileRead,LzhyrifxLog,D:\AutoMaa\Python\Ordinary\MAA\debug\gui.log
+    FileRead,OrdinaryLog,D:\AutoMaa\Python\Ordinary\MAA\debug\gui.log
     res.SetBodyText(OrdinaryLog)
     res.status := 200
 }
