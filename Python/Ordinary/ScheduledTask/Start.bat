@@ -1,2 +1,2 @@
 cd ..
-start Start.vbs
+start D:\AutoMaa\Python\Ordinary\Start.vbs

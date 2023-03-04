@@ -14,6 +14,8 @@ paths["/OrdinaryStart"] := Func("OrdinaryStart")
 paths["/OrdinaryKill"] := Func("OrdinaryKill")
 paths["/OrdinaryLog"] := Func("OrdinaryLog")
 paths["/Todesk"] := Func("Todesk")
+paths["/Shutdown"] := Func("Shutdown")
+paths["/CancelShutdown"] := Func("CancelShutdown")
 
 server := new HttpServer()
 server.LoadMimes(A_ScriptDir . "/mime.types")
@@ -82,5 +84,18 @@ Todesk(ByRef req, ByRef res) {
     res.status := 200
     run, "C:\Program Files\ToDesk\ToDesk.exe"
 }
+
+Shutdown(ByRef req, ByRef res) {
+    res.SetBodyText("Shutdown")
+    res.status := 200
+    run, %comspec% /c shutdown -s -t 120
+}
+
+CancelShutdown(ByRef req, ByRef res) {
+    res.SetBodyText("CancelShutdown")
+    res.status := 200
+    run, %comspec% /c shutdown -a
+}
+
 #include, %A_ScriptDir%\AHKhttp.ahk
 #include D:\AutoMaa\Web\AHKsock-master\AHKsock-master\AHKsock.ahk

@@ -1,2 +1,2 @@
 set ws=WScript.CreateObject("WScript.Shell")
-ws.Run ".\Automaa.py",0
+ws.Run "D:\AutoMaa\Python\Special\Automaa.py",0

@@ -1,2 +1,2 @@
 cd ..
-start Automaa.vbs
+start D:\AutoMaa\Python\Special\Automaa.vbs
