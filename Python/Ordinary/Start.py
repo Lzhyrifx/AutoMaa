@@ -32,9 +32,9 @@ def remove(x):
         pass
 
 
-if test("MeoAsstGui.exe", Maa):
+if test("MAA.exe", Maa):
     pass
 else:
-    rename("gui.bak.log", "gui.log")
+    rename(r"MAA\debug\gui.bak.log", r"MAA\debug\gui.log")
     remove(r"MAA\debug\asst.log")
     os.system(Maa)

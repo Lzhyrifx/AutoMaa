@@ -91,7 +91,7 @@
   "GUI.Size.Height": "600",
   "VersionUpdate.name": "",
   "VersionUpdate.body": "",
-  "VersionUpdate.package": "MAAComponent-OTA-v4.11.0-beta.2_v4.11.0-win-x64.zip",
+  "VersionUpdate.package": "",
   "MainFunction.ActionAfterCompleted": "ExitEmulatorAndSelf",
   "Mall.CreditFirstListNew": "招聘许可；龙门币；加急许可",
   "Start.MinimizingStartup": "True",

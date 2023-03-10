@@ -4,7 +4,6 @@ import ctypes
 import os
 import subprocess
 import sys
-import time
 import psutil
 
 MaaProcess = r"MAA\MAA.exe"  # MAA路径
@@ -35,10 +34,9 @@ def is_admin():  # 提取管理员权限
 
 
 if is_admin():
-    kill("MeoAsstGui.exe", MaaProcess)
+    kill("MAA.exe", MaaProcess)  # MAA进程名
     kill("HD-Player.exe", Simulator)  # 模拟器进程名
     killpython("python.exe")
-    time.sleep(1)
     os.system("taskkill /f /im cmd.exe")
 else:
     ctypes.windll.shell32.ShellExecuteW(None, "runas", sys.executable, __file__, None, 1)  # 提取管理员权限

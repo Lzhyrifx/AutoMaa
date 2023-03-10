@@ -17,7 +17,7 @@ def test(x, y):  # 判断进程是否存活
 
 nowtime = time.strftime("%H:%M:%S", time.localtime())
 if "20:00:00" < nowtime < "20:45:00":  # 指定时间
-    if test("MeoAsstGui.exe", Maa):
+    if test("MAA.exe", Maa):
         pass
     else:
         os.system(Maa)

@@ -89,9 +89,9 @@
   "GUI.Position.Top": "235",
   "GUI.Size.Width": "800",
   "GUI.Size.Height": "600",
-  "VersionUpdate.name": "",
-  "VersionUpdate.body": "",
-  "VersionUpdate.package": "MAAComponent-OTA-v4.11.0-beta.2_v4.11.0-win-x64.zip",
+  "VersionUpdate.name": "v4.12.0-rc.1",
+  "VersionUpdate.body": "## v4.12.0-rc.1\n\n### 改进\n\n- 更新技能 ready 识别模型 @MistEO\n\n### 修复\n\n- 再次修复 Changelog 弹窗中 中文文本的字形问题 @zzyyyl\n- 修复 `泰拉大陆调查团` 识别错误 @MistEO\n\n### 其他\n\n- 优化 Changelog 生成器 @zzyyyl\n- 修复 Changelog 生成器生成的 merge commit 的作者与 message 中多空格的问题 @zzyyyl\n- fix yaml syntax of release-ota @horror-proton\n- fix compile error @horror-proton\n\n### For develops\n\n- 增加一个task，可以执行tasks.json内任意一个task (#3930) @yuanyan3060\n- use maatouch in python script by default @horror-proton\n\n\n**Full Changelog**: [v4.12.0-beta.3 -> v4.12.0-rc.1](https://github.com/MaaAssistantArknights/MaaAssistantArknights/compare/v4.12.0-beta.3...v4.12.0-rc.1)",
+  "VersionUpdate.package": "",
   "MainFunction.ActionAfterCompleted": "ExitEmulatorAndSelf",
   "Mall.CreditFirstListNew": "招聘许可；龙门币；加急许可",
   "Start.MinimizingStartup": "True",
@@ -104,5 +104,6 @@
   "Start.RunDirectly": "True",
   "Start.StartEmulator": "True",
   "VersionUpdate.UseAria2": "True",
-  "Start.EmulatorWaitSeconds": "60"
+  "Start.EmulatorWaitSeconds": "60",
+  "VersionUpdate.isfirstboot": "False"
 }
