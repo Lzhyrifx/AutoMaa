@@ -9,6 +9,7 @@ import schedule
 MaaOne = r"MAA1\MAA.exe"  # MAA1路径
 MaaTwo = r"MAA2\MAA.exe"  # MAA2路径
 Nox = r"D:\Program Files\Nox\bin\Nox.exe"  # 模拟器路径
+CaptureUpdate = r"D:\AutoMaa\Python\CaptureUpdate.vbs"
 
 
 def rename(x, y):  # 重命名文件
@@ -34,18 +35,10 @@ def start(x):
     os.system(x)
 
 
-def remove(x):
-    try:
-        os.remove(x)
-    except FileNotFoundError:
-        pass
-
-
 # 定时任务
 schedule.every().day.at("20:00:00").do(rename, x=r"MAA1\debug\gui.bak.log", y=r"MAA1\debug\gui.log")
-schedule.every().day.at("20:00:00").do(remove, x=r"MAA1\debug\asst.log")
-schedule.every().day.at("20:00:00").do(remove, x=r"MAA2\debug\asst.log")
 schedule.every().day.at("20:00:00").do(start, x=MaaOne)
+schedule.every().day.at("20:01:00").do(start, x=CaptureUpdate)
 schedule.every().day.at("20:50:00").do(kill, x="MAA.exe", y=MaaOne)
 schedule.every().day.at("20:50:00").do(kill, x="Nox.exe", y=Nox)  # 模拟器进程名
 schedule.every().day.at("20:50:00").do(start, x=MaaTwo)

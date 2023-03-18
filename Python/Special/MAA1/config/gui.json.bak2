@@ -89,9 +89,9 @@
   "GUI.Position.Top": "235",
   "GUI.Size.Width": "800",
   "GUI.Size.Height": "600",
-  "VersionUpdate.name": "",
-  "VersionUpdate.body": "",
-  "VersionUpdate.package": "MAAComponent-OTA-v4.11.0-beta.2_v4.11.0-win-x64.zip",
+  "VersionUpdate.name": "v4.12.0-rc.2",
+  "VersionUpdate.body": "## v4.12.0-rc.2\n\n### 修复\n\n- 修复自动作战，部分地图中干员技能无法开启的问题 @MistEO\n- 修复“借助战一日只执行一次”没有生效的问题。 (#3940) @Hydrogina @ABA2396\n\n### 其他\n\n- 点赞作业添加返回值检查 @MistEO\n- 隐藏 MacGui 的生息演算 @hguandl\n- 重构 Changelog 生成器；增加几个参数 @zzyyyl\n- Update JP 翠玉の夢 and add Operators (#3949) @wallsman\n- 解决PUBLIC_HEADER的Warning @hguandl\n\n\n**Full Changelog**: [v4.12.0-rc.1 -> v4.12.0-rc.2](https://github.com/MaaAssistantArknights/MaaAssistantArknights/compare/v4.12.0-rc.1...v4.12.0-rc.2)",
+  "VersionUpdate.package": "MAAComponent-OTA-v4.12.0-rc.1_v4.12.0-rc.2-win-x64.zip",
   "MainFunction.ActionAfterCompleted": "ExitEmulatorAndSelf",
   "Mall.CreditFirstListNew": "招聘许可；龙门币；加急许可",
   "Start.MinimizingStartup": "True",
@@ -104,5 +104,6 @@
   "Start.RunDirectly": "True",
   "Start.StartEmulator": "True",
   "VersionUpdate.UseAria2": "True",
-  "Start.EmulatorWaitSeconds": "60"
+  "Start.EmulatorWaitSeconds": "60",
+  "VersionUpdate.isfirstboot": "True"
 }
