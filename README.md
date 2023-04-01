@@ -51,7 +51,6 @@
 - LogNow适用于MAA正在运行时查看log日志
 - Log包含了近期的MAA运行日志(1000行以内,超过1000行移至LogLast)
 - LogLast是MAA旧的运行日志
-####
 - Todesk是打开Todesk程序(远控软件,Todesk前不需要加模式)
 - Shutdown2分钟后电脑关机(Shutdown前不需要加模式)
 - CancelShutdown阻止电脑关机(CancelShutdown前不需要加模式)
