@@ -8,7 +8,7 @@ import schedule
 MaaOne = r"D:\AutoMaa\Python\Special\MAA1\MAA.exe"  # MAA1路径
 MaaTwo = r"D:\AutoMaa\Python\Special\MAA2\MAA.exe"  # MAA2路径
 Nox = r"D:\Program Files\Nox\bin\Nox.exe"  # 模拟器路径
-CaptureUpdate = r"D:\AutoMaa\Python\CaptureUpdate.vbs"
+CaptureUpdate = r"D:\AutoMaa\Python\CaptureUpdate.py"
 
 
 def kill(x, y):  # 进程结束函数

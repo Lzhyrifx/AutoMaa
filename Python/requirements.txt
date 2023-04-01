@@ -1,0 +1,7 @@
+opencv-python
+psutil
+pywin32
+schedule
+pyscreeze
+pyautogui
+pillow

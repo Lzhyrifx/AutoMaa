@@ -1,11 +1,10 @@
 import os
 import shutil
 import time
-
 import psutil
 
 MAA = r"D:\AutoMaa\Python\Ordinary\MAA\MAA.exe"  # MAA路径
-CaptureUpdate = r"D:\AutoMaa\Python\CaptureUpdate.vbs"
+CaptureUpdate = r"D:\AutoMaa\Python\CaptureUpdate.py"
 
 
 def rename(x, y):  # 重命名文件

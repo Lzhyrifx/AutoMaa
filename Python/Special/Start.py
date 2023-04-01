@@ -4,7 +4,7 @@ import psutil
 
 MAA = r"D:\AutoMaa\Python\Special\MAA1\MAA.exe"
 Automaa = r"D:\AutoMaa\Python\Special\Automaa.vbs"
-CaptureUpdate = r"D:\AutoMaa\Python\CaptureUpdate.vbs"
+CaptureUpdate = r"D:\AutoMaa\Python\CaptureUpdate.py"
 
 
 def test(x, y):  # 判断进程是否存活
