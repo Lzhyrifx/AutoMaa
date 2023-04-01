@@ -5,14 +5,16 @@ FileEncoding,UTF-8
 paths := {}
 paths["/"] := Func("Null")
 paths["404"] := Func("NotFound")
-paths["/SpecialTest"] := Func("SpecialTest")
 paths["/SpecialStart"] := Func("SpecialStart")
 paths["/SpecialKill"] := Func("SpecialKill")
+paths["/SpecialLogNow"] := Func("SpecialLogNow")
 paths["/SpecialLog"] := Func("SpecialLog")
-paths["/OrdinaryTest"] := Func("OrdinaryTest")
+paths["/SpecialLogLast"] := Func("SpecialLogLast")
 paths["/OrdinaryStart"] := Func("OrdinaryStart")
 paths["/OrdinaryKill"] := Func("OrdinaryKill")
+paths["/OrdinaryLogNow"] := Func("OrdinaryLogNow")
 paths["/OrdinaryLog"] := Func("OrdinaryLog")
+paths["/OrdinaryLogLast"] := Func("OrdinaryLogLast")
 paths["/Todesk"] := Func("Todesk")
 paths["/Shutdown"] := Func("Shutdown")
 paths["/CancelShutdown"] := Func("CancelShutdown")
@@ -33,11 +35,6 @@ Null(ByRef req, ByRef res) {
     res.status := 200
 }
 
-SpecialTest(ByRef req, ByRef res) {
-    res.SetBodyText("Success")
-    res.status := 200
-}
-
 SpecialStart(ByRef req, ByRef res) {
     res.SetBodyText("Starting...")
     res.status := 200
@@ -50,14 +47,21 @@ SpecialKill(ByRef req, ByRef res) {
     run, "D:\AutoMaa\Python\Special\Kill.vbs"
 }
 
-SpecialLog(ByRef req, ByRef res) {
+SpecialLogNow(ByRef req, ByRef res) {
     FileRead,SpecialLog,D:\AutoMaa\Python\Special\MAA1\debug\gui.log
+    res.SetBodyText(SpecialLogNow)
+    res.status := 200
+}
+
+SpecialLog(ByRef req, ByRef res) {
+    FileRead,SpecialLog,D:\AutoMaa\Python\Special\GuiLog.log
     res.SetBodyText(SpecialLog)
     res.status := 200
 }
 
-OrdinaryTest(ByRef req, ByRef res) {
-    res.SetBodyText("Success")
+SpecialLogLast(ByRef req, ByRef res) {
+    FileRead,SpecialLog,D:\AutoMaa\Python\Special\GuiLog.bak.log
+    res.SetBodyText(SpecialLogLast)
     res.status := 200
 }
 
@@ -73,9 +77,21 @@ OrdinaryKill(ByRef req, ByRef res) {
     run, "D:\AutoMaa\Python\Ordinary\Kill.vbs"
 }
 
-OrdinaryLog(ByRef req, ByRef res) {
+OrdinaryLogNow(ByRef req, ByRef res) {
     FileRead,OrdinaryLog,D:\AutoMaa\Python\Ordinary\MAA\debug\gui.log
+    res.SetBodyText(OrdinaryLogNow)
+    res.status := 200
+}
+
+OrdinaryLog(ByRef req, ByRef res) {
+    FileRead,OrdinaryLog,D:\AutoMaa\Python\Ordinary\GuiLog.log
     res.SetBodyText(OrdinaryLog)
+    res.status := 200
+}
+
+OrdinaryLog(ByRef req, ByRef res) {
+    FileRead,OrdinaryLog,D:\AutoMaa\Python\Ordinary\GuiLog.bak.log
+    res.SetBodyText(OrdinaryLogLast)
     res.status := 200
 }
 
