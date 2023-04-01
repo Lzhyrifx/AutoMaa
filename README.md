@@ -19,8 +19,8 @@
 - 建议使用[蓝叠模拟器5国际版](https://wp-s.bluestacks.com/)
 - 如果双模式同时使用,推荐[蓝叠模拟器5国际版](https://wp-s.bluestacks.com/)和[夜神模拟器](https://www.yeshen.com/)
 - 请在Maa设置中设置模拟器路径
-  -蓝叠5默认位置C:\Program Files\BlueStacks_nxt\HD-Player.exe
-  -夜神默认位置D:\Program Files\Nox\bin\Nox.exe
+  - 蓝叠5默认位置C:\Program Files\BlueStacks_nxt\HD-Player.exe
+  - 夜神默认位置D:\Program Files\Nox\bin\Nox.exe
 ## 定时任务
 - 在文件资源管理器右键此电脑,选择任务计划程序,导入任务([Ordinary](https://github.com/Lzhyrifx/AutoMaa/blob/master/Python/Ordinary/ScheduledTask/OrdinaryAutoMaa.xml)&[Special](https://github.com/Lzhyrifx/AutoMaa/blob/master/Python/Special/ScheduledTask/SpecialAutoMaa.xml))
 - 注意:每次更改任务计划都需要重新选择用户和组,否则会报参数错误<br>
@@ -40,7 +40,18 @@
 - 打开D:\AutoMaa\Web\AHKhttp-master\AHKhttp-master\example.ahk(无报错则启动成功)
 - 打开D:\AutoMaa\Web\frpc_windows_amd64\Start.bat
 - [获取启动命令](https://frp.starryfrp.com/console/Proxies)并输入命令行
-- 访问网站即可远程控制,如:http://xxx(隧道名).starryfrp.com:XXXXX(端口名)/SpecialTest(网页返回Success则远程控制成功)
+## 使用须知
+- 访问网站即可远程控制,如:http://xxx(隧道名).starryfrp.com:XXXXX(端口名)/X
+  - 例如http://xxx.starryfrp.com:XXXXX/OrdinaryKill可以中途关闭MAA
+### 功能(注意:以下名字前都必须加上模式才能使用)
+- Kill可以终止MAA和模拟器的运行(如果是SpecialKill,还会终止AutoMaa程序,如果不想使用AutoMaa,可以在7点半后运行SpecialKill)
+- Start可以中途打开MAA
+- LogNow适用于MAA正在运行时查看log日志
+- Log包含了近期的MAA运行日志(1000行以内,超过1000行移至LogLast)
+- LogLast是MAA旧的运行日志
+- Todesk是打开Todesk程序(远控软件,Todesk前不需要加模式)
+- Shutdown2分钟后电脑关机(Shutdown前不需要加模式)
+- CancelShutdown阻止电脑关机(CancelShutdown前不需要加模式)
 # 注意事项
 - 建议将AutoMaa解压至D盘
 - 换模拟器会导致Kill.py无法使用,内含进程检测(需要自己调整,Ordinary模式使用蓝叠5国际,Special模式使用夜神)
