@@ -2,11 +2,9 @@
 基于[MaaAssistantArknights](https://github.com/MaaAssistantArknights/MaaAssistantArknights)的附属<br>
 包括更多功能的定时执行任务和远程控制
 ## 定时执行任务
-包括Ordinary和Special模式
+包括Ordinary和Special模式(中途可通过远程控制开关AutoMaa)
 - Ordinary:无防沉迷(默认一日三次上号,默认为01,09,17整点启动)
 - Special:防沉迷(50分钟的日常和剿灭以及Rougelike,10分钟剩下领取每日奖励)
-<br>
-中途可通过远程控制开关AutoMaa
 ## 远程控制
  通过[AutoHotkey](https://github.com/AutoHotkey/AutoHotkey)来搭建内网<br>
  并且通过内网穿透以达到远程控制(默认使用的是[星空内网穿透](https://frp.starryfrp.com/))
