@@ -4,8 +4,9 @@ import time
 
 import psutil
 
-Maa = r"MAA\MAA.exe"  # MAA路径
+MAA = r"D:\AutoMaa\Python\Ordinary\MAA\MAA.exe"  # MAA路径
 CaptureUpdate = r"D:\AutoMaa\Python\CaptureUpdate.vbs"
+
 
 def rename(x, y):  # 重命名文件
     old = x  # 旧文件名
@@ -33,10 +34,12 @@ def remove(x):
         pass
 
 
-if test("MAA.exe", Maa):
+if test("MAA.exe", MAA):
     pass
 else:
-    rename(r"MAA\debug\gui.bak.log", r"MAA\debug\gui.log")
-    os.system(Maa)
+    os.system(MAA)
     time.sleep(60)
     os.system(CaptureUpdate)
+    time.sleep(120)
+    os.system(r"log.py")
+
