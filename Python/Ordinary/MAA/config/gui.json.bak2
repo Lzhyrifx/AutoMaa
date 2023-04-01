@@ -40,7 +40,7 @@
   "Infrast.Office.IsChecked": "True",
   "Infrast.Dorm.IsChecked": "True",
   "Roguelike.Squad": "",
-  "MainFunction.Stage1": "CF-8",
+  "MainFunction.Stage1": "",
   "Fight.RemainingSanityStage": "1-7",
   "MainFunction.Stage2": "CE-6",
   "MainFunction.Stage3": "LS-6",
@@ -85,12 +85,12 @@
   "GUI.Monitor.Number": "\\\\.\\DISPLAY1",
   "GUI.Monitor.Width": "1920",
   "GUI.Monitor.Height": "1080",
-  "GUI.Position.Left": "408",
-  "GUI.Position.Top": "350",
+  "GUI.Position.Left": "1084",
+  "GUI.Position.Top": "296",
   "GUI.Size.Width": "800",
   "GUI.Size.Height": "600",
-  "VersionUpdate.name": "v4.12.0-rc.1",
-  "VersionUpdate.body": "## v4.12.0-rc.1\n\n### 改进\n\n- 更新技能 ready 识别模型 @MistEO\n\n### 修复\n\n- 再次修复 Changelog 弹窗中 中文文本的字形问题 @zzyyyl\n- 修复 `泰拉大陆调查团` 识别错误 @MistEO\n\n### 其他\n\n- 优化 Changelog 生成器 @zzyyyl\n- 修复 Changelog 生成器生成的 merge commit 的作者与 message 中多空格的问题 @zzyyyl\n- fix yaml syntax of release-ota @horror-proton\n- fix compile error @horror-proton\n\n### For develops\n\n- 增加一个task，可以执行tasks.json内任意一个task (#3930) @yuanyan3060\n- use maatouch in python script by default @horror-proton\n\n\n**Full Changelog**: [v4.12.0-beta.3 -> v4.12.0-rc.1](https://github.com/MaaAssistantArknights/MaaAssistantArknights/compare/v4.12.0-beta.3...v4.12.0-rc.1)",
+  "VersionUpdate.name": "v4.13.0-beta.1",
+  "VersionUpdate.body": "## v4.13.0-beta.1\n\n### 新增\n\n- 界面夜间模式 (#4020) @ABA2396\n- 更新危机合约地图及其他游戏数据 @lza11111 @MistEO\n- macOS OTA 支持 @hguandl\n\n### 改进\n\n- 未选择任务时界面报错信息 #4034 @ABA2396\n- 危机合约版本更新无法刷钱本等物质搜寻关 #4051 @ABA2396\n- 关闭基建宿舍复查功能 @MistEO\n- 将海蒂加入阿卡胡拉作业黑名单 (#4044) @Snow-dash\n\n### 修复\n\n- 修复 Mac LS-6 tag 错误 @ABA2396\n- CE-6 代理识别错误 @ABA2396\n- 修复定时器显示问题 @ABA2396\n- 自定义关卡与备选关卡同时开启时的逻辑问题 #4029 @ABA2396\n- 修复备选关卡不会自动大写的问题 @ABA2396\n- 尝试修复CE-5导航问题 @ABA2396\n- 主线关卡导航问题 @ABA2396\n\n### 其他\n\n- fix build error with -Werror=restrict (#4052) @aa889788 @horror-proton\n- 修复 Clang / GCC 编译warnings (#4043) @hguandl\n- 优化代码 @ABA2396\n- 加速 `tasks.json` 的读取 (#3977) @zzyyyl\n- prevent unnecessary copy in TilePack @horror-proton\n- 优化作业缓存路径 @MistEO\n- 修改LinkStart任务执行顺序 @ABA2396\n- 修改添加基建任务判断条件 @ABA2396\n- 修改蓝叠模拟器关闭方式 @ABA2396\n- 调整Level6资源关卡代理判断延迟，替换识别图片 @ABA2396\n- 格式化代码 @ABA2396\n- put all config keys in ConfigKeys class; feat: allow customizing window title prefix through config (#3993) @KevinT3Hu\n\n### For overseas\n\n#### Common\n\n- 增加海外悠星服务器153基建的作业（截止至玛恩纳） (#4050) @BlackNorton\n- sort overseas clients' json @liuyifan-eric\n\n#### YostarJP\n\n- JP OF-1 credit support @liuyifan-eric\n- Fix 承曦グレイ （YoStarJP） (#4009) @cenfusheng\n\n#### TXWY\n\n- 修复 礫（txwy）的文字识别问题 (#4009) @cenfusheng\n\n**Full Changelog**: [v4.12.3 -> v4.13.0-beta.1](https://github.com/MaaAssistantArknights/MaaAssistantArknights/compare/v4.12.3...v4.13.0-beta.1)\n",
   "VersionUpdate.package": "",
   "MainFunction.ActionAfterCompleted": "ExitEmulatorAndSelf",
   "Mall.CreditFirstListNew": "招聘许可；龙门币；加急许可",
@@ -104,5 +104,6 @@
   "Start.EmulatorWaitSeconds": "60",
   "VersionUpdate.UseAria2": "True",
   "VersionUpdate.isfirstboot": "False",
-  "Fight.UseExpiringMedicine": "True"
+  "Fight.UseExpiringMedicine": "True",
+  "Connect.RetryOnDisconnected": "True"
 }

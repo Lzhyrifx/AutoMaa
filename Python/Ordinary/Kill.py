@@ -6,7 +6,7 @@ import subprocess
 import sys
 import psutil
 
-MaaProcess = r"MAA\MAA.exe"  # MAA路径
+MaaProcess = r"D:\AutoMaa\Python\Ordinary\MAA\MAA.exe"  # MAA路径
 Simulator = r"C:\Program Files\BlueStacks_nxt\HD-Player.exe"  # 模拟器路径
 python = r"C:\Users\Lzhyrifx\AppData\Local\Programs\Python\Python39\python.exe"  # python路径
 

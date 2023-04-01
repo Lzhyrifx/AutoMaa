@@ -4,12 +4,10 @@ import ctypes
 import os
 import subprocess
 import sys
-import time
-
 import psutil
 
-MaaProcessOne = r"MAA1\MAA.exe"  # MAA1路径
-MaaProcessTwo = r"MAA2\MAA.exe"  # MAA2路径
+MaaProcessOne = r"D:\AutoMaa\Python\Special\MAA1\MAA.exe"  # MAA1路径
+MaaProcessTwo = r"D:\AutoMaa\Python\Special\MAA2\MAA.exe"  # MAA2路径
 Simulator = r"D:\Program Files\Nox\bin\Nox.exe"  # 模拟器路径
 python = r"C:\Users\Lzhyrifx\AppData\Local\Programs\Python\Python39\python.exe"  # python路径
 
@@ -37,11 +35,10 @@ def is_admin():  # 提取管理员权限
 
 
 if is_admin():
-    kill("MeoAsstGui.exe", MaaProcessOne)
-    kill("MeoAsstGui.exe", MaaProcessTwo)
+    kill("MAA.exe", MaaProcessOne)
+    kill("MAA.exe", MaaProcessTwo)
     kill("Nox.exe", Simulator)  # 模拟器进程名
     killpython("python.exe")
-    time.sleep(1)
     os.system("taskkill /f /im cmd.exe")
 else:
     ctypes.windll.shell32.ShellExecuteW(None, "runas", sys.executable, __file__, None, 1)  # 提取管理员权限

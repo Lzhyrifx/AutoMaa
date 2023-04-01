@@ -6,8 +6,8 @@ import time
 import psutil
 import schedule
 
-MaaOne = r"MAA1\MAA.exe"  # MAA1路径
-MaaTwo = r"MAA2\MAA.exe"  # MAA2路径
+MaaOne = r"D:\AutoMaa\Python\Special\MAA1\MAA.exe"  # MAA1路径
+MaaTwo = r"D:\AutoMaa\Python\Special\MAA2\MAA.exe"  # MAA2路径
 Nox = r"D:\Program Files\Nox\bin\Nox.exe"  # 模拟器路径
 CaptureUpdate = r"D:\AutoMaa\Python\CaptureUpdate.vbs"
 
