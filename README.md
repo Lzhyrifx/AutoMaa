@@ -4,7 +4,7 @@
 ## 定时执行任务
 包括Ordinary和Special模式
 - Ordinary:无防沉迷(默认一日三次上号,默认为01,09,17整点启动)
-- Special:防沉迷(50分钟的日常剿灭及Rougelike,10分钟剩下领取每日奖励)<br>
+- Special:防沉迷(50分钟的日常和剿灭以及Rougelike,10分钟剩下领取每日奖励)<br>
 中途可通过远程控制开关AutoMaa
 ## 远程控制
  通过[AutoHotkey](https://github.com/AutoHotkey/AutoHotkey)来搭建内网<br>
@@ -41,8 +41,8 @@
 - 打开D:\AutoMaa\Web\frpc_windows_amd64\Start.bat
 - [获取启动命令](https://frp.starryfrp.com/console/Proxies)并输入命令行
 ## 使用须知
-- 访问网站即可远程控制,如:"http://xxx(隧道名).starryfrp.com:XXXXX(端口名)/X"
-  - 例如http://xxx.starryfrp.com:XXXXX/OrdinaryKill可以中途关闭MAA
+- 访问网站即可远程控制,如:http://xxx(隧道名).starryfrp.com:XXXXX(端口名)/X
+  - 例如http://xxx.starryfrp.com:XXXXX/OrdinaryLog可以查看MAA近期的日志
 ### 功能(注意:以下名字前都必须加上模式才能使用)
 - Kill可以终止MAA和模拟器的运行(如果是SpecialKill,还会终止AutoMaa程序,如果不想使用AutoMaa,可以在7点半后运行SpecialKill)
 - Start可以中途打开MAA
