@@ -1,4 +1,7 @@
 Python/Ordinary/MAA/debug/*.log
 Python/Special/MAA1/debug/*.log
 Python/Special/MAA2/debug/*.log
-Demonstrate
+Python/Ordinary/GuiLog.log
+Python/Ordinary/GuiLog.bak.log
+Python/Special/GuiLog.log
+Python/Special/GuiLog.bak.log
