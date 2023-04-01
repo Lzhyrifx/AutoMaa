@@ -4,7 +4,7 @@
 ## 定时执行任务
 包括Ordinary和Special模式
 - Ordinary:无防沉迷(默认一日三次上号,默认为01,09,17整点启动)
-- Special:防沉迷(50分钟的日常和剿灭以及Rougelike,10分钟剩下领取每日奖励)<br>
+- Special:防沉迷(50分钟的日常和剿灭以及Rougelike,10分钟剩下领取每日奖励)
 中途可通过远程控制开关AutoMaa
 ## 远程控制
  通过[AutoHotkey](https://github.com/AutoHotkey/AutoHotkey)来搭建内网<br>
