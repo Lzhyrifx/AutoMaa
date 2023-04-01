@@ -21,7 +21,9 @@
   - 蓝叠5默认位置C:\Program Files\BlueStacks_nxt\HD-Player.exe
   - 夜神默认位置D:\Program Files\Nox\bin\Nox.exe
 ## 定时任务
-- 在文件资源管理器右键此电脑,选择任务计划程序,导入任务([Ordinary](https://github.com/Lzhyrifx/AutoMaa/blob/master/Python/Ordinary/ScheduledTask/OrdinaryAutoMaa.xml)&[Special](https://github.com/Lzhyrifx/AutoMaa/blob/master/Python/Special/ScheduledTask/SpecialAutoMaa.xml))
+- 在文件资源管理器右键此电脑,选择任务计划程序,导入任务(Ordinary&Special)
+  - [Ordinary](https://github.com/Lzhyrifx/AutoMaa/blob/master/Python/Ordinary/ScheduledTask/OrdinaryAutoMaa.xml)的路径在D:\AutoMaa\Python\Ordinary\ScheduledTask\OrdinaryAutoMaa.xml
+  - [Special](https://github.com/Lzhyrifx/AutoMaa/blob/master/Python/Special/ScheduledTask/SpecialAutoMaa.xml)的路径在D:\AutoMaa\Python\Special\ScheduledTask\SpecialAutoMaa.xml
 - 注意:每次更改任务计划都需要重新选择用户和组,否则会报参数错误<br>
 ![Image text](https://github.com/Lzhyrifx/AutoMaa/blob/master/Demonstrate/TaskScheduler.png)
 - 如果希望AutoMaa在后台使用,可以勾选"不管用户是否登录都要运行"(此功能不推荐,模拟器还是会最小化前台,并且关闭Maa只能通过任务管理器终止进程或使用AutoMaa的Kill.py)
@@ -31,8 +33,8 @@
 ## AutoHotkey
 - 下载[AutoHotkey](https://www.autohotkey.com/)v1.1
 - [AHK文件设置](https://github.com/Lzhyrifx/AutoMaa/blob/master/Web/AHKhttp-master/AHKhttp-master/example.ahk)
-  - 21行是自定义端口,可更改(不和默认端口冲突即可)
-  - 86行是AHKsock.ahk位置,需要根据文件位置更改
+  - 25行是自定义端口,可更改(不和默认端口冲突即可)
+  - 117行是AHKsock.ahk位置,需要根据文件位置更改
 ## 内网穿透(默认使用[星空内网穿透](https://frp.starryfrp.com/))
 - 创建隧道,除了自定义端口外其他默认
 ## 启用内网穿透
