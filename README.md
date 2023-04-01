@@ -10,9 +10,10 @@
  并且通过内网穿透以达到远程控制(默认使用的是[星空内网穿透](https://frp.starryfrp.com/))
  AHK稳定性一般,之后可能会更换
 ### 主要功能
-- 远程打开Maa(Start.py)
-- 远程关闭Maa(Kill.py)
-- 远程查看Maa日志
+- 定时执行任务
+- 远程打开Maa(Start)
+- 远程关闭Maa(Kill)
+- 远程查看Maa日志(LogNow&Log&LogLast)
 # 使用说明
 ## 模拟器([关于模拟器支持情况和ADB设置](https://maa.plus/docs/1.3-%E6%A8%A1%E6%8B%9F%E5%99%A8%E6%94%AF%E6%8C%81.html))
 - 建议使用[蓝叠模拟器5国际版](https://wp-s.bluestacks.com/)
@@ -50,6 +51,7 @@
 - LogNow适用于MAA正在运行时查看log日志
 - Log包含了近期的MAA运行日志(1000行以内,超过1000行移至LogLast)
 - LogLast是MAA旧的运行日志
+####
 - Todesk是打开Todesk程序(远控软件,Todesk前不需要加模式)
 - Shutdown2分钟后电脑关机(Shutdown前不需要加模式)
 - CancelShutdown阻止电脑关机(CancelShutdown前不需要加模式)
