@@ -89,7 +89,7 @@ OrdinaryLog(ByRef req, ByRef res) {
     res.status := 200
 }
 
-OrdinaryLog(ByRef req, ByRef res) {
+OrdinaryLogLast(ByRef req, ByRef res) {
     FileRead,OrdinaryLog,D:\AutoMaa\Python\Ordinary\GuiLog.bak.log
     res.SetBodyText(OrdinaryLogLast)
     res.status := 200
