@@ -14,6 +14,13 @@
 - 远程打开Maa(Start)
 - 远程关闭Maa(Kill)
 - 远程查看Maa日志(LogNow&Log&LogLast)
+# 安装说明
+- 下载最新的[Automaa](https://github.com/Lzhyrifx/AutoMaa/releases)
+- 解压至D盘
+- 下载并安装[python3.9](https://www.python.org/downloads/)
+- WIN+R,输入cmd,确定,输入pip install -r D:\AutoMaa\Python\requirements.txt
+- 然后将C:\Users\用户名\AppData\Local\Programs\Python\Python39\Lib\site-packages\cv2\cv2.pyd复制到C:\Users\Lzhyrifx\AppData\Local\Programs\Python\Python39\Lib\site-packages里<br>
+注意:AppData是隐藏的文件
 # 使用说明
 ## 模拟器([关于模拟器支持情况和ADB设置](https://maa.plus/docs/1.3-%E6%A8%A1%E6%8B%9F%E5%99%A8%E6%94%AF%E6%8C%81.html))
 - 建议使用[蓝叠模拟器5国际版](https://wp-s.bluestacks.com/)
