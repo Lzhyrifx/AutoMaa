@@ -40,7 +40,7 @@
   "Infrast.Office.IsChecked": "True",
   "Infrast.Dorm.IsChecked": "True",
   "Roguelike.Squad": "",
-  "MainFunction.Stage1": "AP-5",
+  "MainFunction.Stage1": "",
   "Fight.RemainingSanityStage": "1-7",
   "MainFunction.Stage2": "CE-6",
   "MainFunction.Stage3": "LS-6",
@@ -85,8 +85,8 @@
   "GUI.Monitor.Number": "\\\\.\\DISPLAY1",
   "GUI.Monitor.Width": "1920",
   "GUI.Monitor.Height": "1080",
-  "GUI.Position.Left": "524",
-  "GUI.Position.Top": "256",
+  "GUI.Position.Left": "660",
+  "GUI.Position.Top": "331",
   "GUI.Size.Width": "800",
   "GUI.Size.Height": "600",
   "VersionUpdate.name": "v4.13.0-beta.3",
@@ -119,5 +119,6 @@
   "TaskQueue.\u5237\u7406\u667A.IsChecked": "True",
   "TaskQueue.\u83B7\u53D6\u4FE1\u7528\u53CA\u8D2D\u7269.IsChecked": "True",
   "TaskQueue.\u9886\u53D6\u65E5\u5E38\u5956\u52B1.IsChecked": "True",
-  "TaskQueue.\u81EA\u52A8\u8089\u9E3D.IsChecked": "False"
+  "TaskQueue.\u81EA\u52A8\u8089\u9E3D.IsChecked": "False",
+  "MainFunction.UseMedicine": "False"
 }
