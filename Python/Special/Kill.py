@@ -1,4 +1,7 @@
-from Python.Module import *
+import sys
+
+sys.path.append(r'D:\AutoMaa\Python')  # 设置临时模块路径
+from Module import *
 import os
 
 admin()  # 提权
