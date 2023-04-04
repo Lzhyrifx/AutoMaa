@@ -11,4 +11,4 @@ else:
         with open(file, 'w+', encoding='utf-8') as f2:
             for text in read:
                 x = re.sub(r'...MainFunction.Stage1.:.".*".', '  "MainFunction.Stage1": "",', text)  # 正则匹配
-                f2.writelines(x)  # 重写
+                f2.writelines(x)  # 覆盖
