@@ -54,13 +54,13 @@ SpecialLogNow(ByRef req, ByRef res) {
 }
 
 SpecialLog(ByRef req, ByRef res) {
-    FileRead,SpecialLog,D:\AutoMaa\Python\Special\GuiLog.log
+    FileRead,SpecialLog,D:\AutoMaa\Python\Special\gui.log
     res.SetBodyText(SpecialLog)
     res.status := 200
 }
 
 SpecialLogLast(ByRef req, ByRef res) {
-    FileRead,SpecialLog,D:\AutoMaa\Python\Special\GuiLog.bak.log
+    FileRead,SpecialLog,D:\AutoMaa\Python\Special\gui.bak.log
     res.SetBodyText(SpecialLogLast)
     res.status := 200
 }
@@ -84,13 +84,13 @@ OrdinaryLogNow(ByRef req, ByRef res) {
 }
 
 OrdinaryLog(ByRef req, ByRef res) {
-    FileRead,OrdinaryLog,D:\AutoMaa\Python\Ordinary\GuiLog.log
+    FileRead,OrdinaryLog,D:\AutoMaa\Python\Ordinary\gui.log
     res.SetBodyText(OrdinaryLog)
     res.status := 200
 }
 
 OrdinaryLogLast(ByRef req, ByRef res) {
-    FileRead,OrdinaryLog,D:\AutoMaa\Python\Ordinary\GuiLog.bak.log
+    FileRead,OrdinaryLog,D:\AutoMaa\Python\Ordinary\gui.bak.log
     res.SetBodyText(OrdinaryLogLast)
     res.status := 200
 }
