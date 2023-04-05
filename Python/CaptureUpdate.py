@@ -1,6 +1,4 @@
-from Module import *
-import os
-import time
+from Module.Module import *
 import cv2
 import pyautogui
 import pyscreeze

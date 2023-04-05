@@ -1,9 +1,4 @@
-import sys
-
-sys.path.append(r'D:\AutoMaa\Python')  # 设置临时模块路径,编译器报错可忽略
 from Module import *
-import sys
-import time
 import schedule
 
 s = Special()
