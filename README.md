@@ -35,6 +35,7 @@
 - 下载并安装[python3.9](https://www.python.org/downloads/)(默认使用python3.9.6)
 - WIN+R,输入cmd,确定,输入pip install -r D:\AutoMaa\Python\requirements.txt
 - 等待外部库导入成功后运行D:\AutoMaa\Python\Initialization\Initialization.py
+- 如果python解释器使用conda虚拟环境的话(将D:\AutoMaa\Python\Initialization\interpreter.txt的内容改为conda,并更改所有vbs文件中的conda环境名,默认conda环境名为Automaa)
 
 ## 模拟器([关于模拟器支持情况和ADB设置](https://maa.plus/docs/1.3-%E6%A8%A1%E6%8B%9F%E5%99%A8%E6%94%AF%E6%8C%81.html))
 - 建议使用[蓝叠模拟器5国际版](https://wp-s.bluestacks.com/)
