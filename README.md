@@ -23,7 +23,7 @@
 - Log包含了近期的MAA运行日志(1000行以内,超过1000行移至LogLast)
 - LogLast是MAA旧的运行日志
 
-### 杂项(远程时,名字前不需要加模式)
+### 杂项
 - Todesk是打开Todesk程序(远控软件)
 - Shutdown5分钟后电脑关机
 - CancelShutdown中途阻止电脑关机
