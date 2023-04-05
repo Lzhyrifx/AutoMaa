@@ -3,6 +3,8 @@ from Module import *
 o = Ordinary()
 
 if not test("MAA.exe", o.maa):
+    x = Normal()
+    time.sleep(5)
     os.system(o.maa)  # 启动MAA
     time.sleep(60)
     os.system(capture_update)  # 检测MAA更新

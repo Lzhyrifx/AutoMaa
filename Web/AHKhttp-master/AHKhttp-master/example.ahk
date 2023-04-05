@@ -11,6 +11,7 @@ paths["/OrdinaryLogNow"] := Func("OrdinaryLogNow")
 paths["/OrdinaryLog"] := Func("OrdinaryLog")
 paths["/OrdinaryLogLast"] := Func("OrdinaryLogLast")
 paths["/OrdinaryDefault"] := Func("OrdinaryDefault")
+paths["/OrdinaryRougelike"] := Func("OrdinaryRougelike")
 paths["/SpecialStart"] := Func("SpecialStart")
 paths["/SpecialKill"] := Func("SpecialKill")
 paths["/SpecialLogNow"] := Func("SpecialLogNow")
@@ -72,6 +73,11 @@ OrdinaryDefault(ByRef req, ByRef res) {
     run, "D:\AutoMaa\Python\Ordinary\Default.vbs"
 }
 
+OrdinaryRougelike(ByRef req, ByRef res) {
+    res.SetBodyText("Rougelike")
+    res.status := 200
+    run, "D:\AutoMaa\Python\Ordinary\Rougelike.vbs"
+}
 
 SpecialStart(ByRef req, ByRef res) {
     res.SetBodyText("Starting...")
@@ -106,13 +112,13 @@ SpecialLogLast(ByRef req, ByRef res) {
 Todesk(ByRef req, ByRef res) {
     res.SetBodyText("Todesk")
     res.status := 200
-    run, "C:\Program Files\ToDesk\ToDesk.exe"
+    run, "D:\Program Files (x86)\ToDesk\ToDesk.exe"
 }
 
 Shutdown(ByRef req, ByRef res) {
     res.SetBodyText("Shutdown")
     res.status := 200
-    run, %comspec% /c shutdown -s -t 120
+    run, %comspec% /c shutdown -s -t 300
 }
 
 CancelShutdown(ByRef req, ByRef res) {
