@@ -118,7 +118,7 @@ Todesk(ByRef req, ByRef res) {
 Shutdown(ByRef req, ByRef res) {
     res.SetBodyText("Shutdown")
     res.status := 200
-    run, %comspec% /c shutdown -s -t 300
+    run, %comspec% /c shutdown -s -t 120
 }
 
 CancelShutdown(ByRef req, ByRef res) {

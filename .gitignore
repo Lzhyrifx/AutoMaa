@@ -1,13 +1,4 @@
-Python/Ordinary/MAA/debug/*.log
-Python/Special/MAA1/debug/*.log
-Python/Special/MAA2/debug/*.log
 Python/Ordinary/gui.log
 Python/Ordinary/gui.bak.log
 Python/Special/gui.log
 Python/Special/gui.bak.log
-Python/Initialization/interpreter.json
-Python/Ordinary/MAA/debug/roguelike
-Python/Special/MAA1/debug/roguelike
-Python/Ordinary/MAA/config/.json
-Python/Special/MAA1/config/.json
-Python/Special/MAA2/config/.json

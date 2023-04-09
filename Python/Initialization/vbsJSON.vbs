@@ -291,9 +291,9 @@ Class vbsJSON
         jsonString = file.ReadAll()
 
         ' 判断
-        If decode(jsonString)("vbs")("environment") = "python" Then
+        If decode(jsonString)("vbs")("environment") = "Python" Then
             environmentpath = "D:\AutoMaa\Python\" & path
-        ElseIf decode(jsonString)("vbs")("environment") = "conda" Then
+        ElseIf decode(jsonString)("vbs")("environment") = "Conda" Then
             environmentpath = "conda run -n " & decode(jsonString)("vbs")("environment_name") & " python D:\AutoMaa\Python\" & path
         Else
             environmentpath = "D:\AutoMaa\Python\" & path

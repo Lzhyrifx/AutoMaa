@@ -16,7 +16,7 @@
 - Log查看MAA近期日志(1000行以内,超过1000行移至LogLast)
 - LogLast查看更早的MAA日志
 - Default将关卡选择切换为当前/上次
-- Rougelike只运行集成战略(目前会被定时任务阻断,待更新)
+- Rougelike运行集成战略(目前会被定时任务阻断,待更新)
 
 ### Special模式
 - Start可以中途打开MAA(8点前打开,则为添加任务计划)
@@ -32,14 +32,14 @@
 
 # 安装说明
 ## 快速部署
-- 下载最新的[Automaa](https://github.com/Lzhyrifx/AutoMaa/releases)
+- 下载最新的[AutoMaa](https://github.com/Lzhyrifx/AutoMaa/releases)
 - 解压至D盘(如果解压到其他盘需要更改程序中的变量路径)
 - 下载并安装[python3.9](https://www.python.org/downloads/)(默认使用python3.9.6)
 - WIN+R,输入cmd,确定,输入pip install -r D:\AutoMaa\Python\requirements.txt
 - 等待外部库导入成功后运行D:\AutoMaa\Python\Initialization\Initialization.py
-- 如果python解释器使用conda虚拟环境的话(默认使用python,不需要更改)
+- 如果python解释器使用conda虚拟环境的话(默认使用Python,不需要更改)
   - 打开D:\AutoMaa\Python\Initialization\interpreter.json
-  - 更改vbs对象中的environment值为conda并更改environment_name值为此项目的虚拟环境名
+  - 更改vbs对象中的environment值为Conda并更改environment_name值为此项目的虚拟环境名(默认为AutoMaa)
 
 ## 模拟器([查看模拟器支持情况和ADB设置](https://maa.plus/docs/1.3-%E6%A8%A1%E6%8B%9F%E5%99%A8%E6%94%AF%E6%8C%81.html))
 - 建议使用[蓝叠模拟器5国际版](https://wp-s.bluestacks.com/)
@@ -59,11 +59,12 @@
 ![Image text](https://github.com/Lzhyrifx/AutoMaa/blob/master/Demonstrate/Start.png)
 
 # 使用须知
-- 强烈建议解压至D盘使用(后续将会支持其他路径)
+- AutoMaa强烈建议解压至D盘使用(后续将会支持其他路径)
+- 由于MAA目前不支持多开,故AutoMaa程序运行前提是不存在其他运行的MAA(比如OrdinaryRougelike运行前提是Ordinary&Special定时运行的MAA不存在)
 - 集成战略(默认皆为水月主题,如要更换,MAA设置中更换)
-  - 请将要打的集成战略主题添加至终端
-  - 如果要打水月主题请结束傀影主题的进程(反之亦然)
-  
+  - 如果要打水月主题,请结束傀影主题的进程(反之亦然)
+  - 请将要打的集成战略主题添加至终端(PIN UP)
+  - ![Image text](https://github.com/Lzhyrifx/AutoMaa/blob/master/Demonstrate/Rougelike.png)
 
   
 # 远程控制

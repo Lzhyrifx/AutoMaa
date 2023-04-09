@@ -3,5 +3,5 @@
   <component name="AhkProjectSettings">
     <option name="defaultAhkSdk" value="AutoHotkey v1.1.35" />
   </component>
-  <component name="ProjectRootManager" version="2" project-jdk-name="Automaa" project-jdk-type="Python SDK" />
+  <component name="ProjectRootManager" version="2" project-jdk-name="AutoMaa" project-jdk-type="Python SDK" />
 </project>
