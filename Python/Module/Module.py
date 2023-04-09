@@ -11,7 +11,7 @@ nox = r"D:\Program Files\Nox\bin\Nox.exe"  # 夜神模拟器路径
 bluestack = r"C:\Program Files\BlueStacks_nxt\HD-Player.exe"  # 蓝叠模拟器路径
 python = r"C:\Users\Lzhyrifx\AppData\Local\Programs\Python\Python39\python.exe"  # python路径
 capture_update = r"D:\AutoMaa\Python\CaptureUpdate.py"  # 检测更新程序
-json = r"D:\AutoMaa\Python\Ordinary\MAA\config\gui.json"
+gui_json = r"D:\AutoMaa\Python\Ordinary\MAA\config\gui.json"
 data = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())  # 获取时间
 line = '=' * 100 + '\n'  # 分割线
 # unicode列表
@@ -47,14 +47,6 @@ def test(x, y):  # 判断进程是否存活
             path = process.exe()
             if path == y:
                 return True
-
-
-def rougelike():
-    with open(json, 'r', encoding='utf-8') as f1:
-        read = f1.readlines()  # 读取gui.json文件内容
-        for text in read:  # 读取gui.json每一行内容
-            if re.search(r'\\u81EA\\u52A8\\u8089\\u9E3D.*True', text):  # 正则匹配
-                return True
         return False
 
 
@@ -79,6 +71,13 @@ def guilog(file, log, log_bak):  # 整理日志
                 f3.truncate()  # 清除所有行
     except FileNotFoundError:
         pass
+
+
+def rougelikejudge():
+    if test("MAA.exe", Ordinary.maa) and Mode.get_current_mode() == "rougelike":
+        admin()  # 提权
+        kill("MAA.exe", Ordinary.maa)  # 终止MAA进程
+        kill("HD-Player.exe", bluestack)  # 终止模拟器进程
 
 
 def admin():  # 获取管理员权限
@@ -113,9 +112,8 @@ class Special:
     log_bak = r"D:\AutoMaa\Python\Special\gui.bak.log"
 
 
-# 正常模式
-class Normal:
-    boollist = [
+class Mode:
+    normal_boollist = [
         True,
         True,
         True,
@@ -124,27 +122,7 @@ class Normal:
         False
     ]
 
-    def __init__(self):
-        if not test("MAA.exe", Ordinary.maa):  # 检测MAA进程
-            with open(json, 'r', encoding='utf-8') as f1:
-                read = f1.readlines()  # 读取gui.json文件内容
-                with open(json, 'w', encoding='utf-8') as f2:
-                    for text in read:  # 读取gui.json每一行内容
-                        match = False  # 匹配标志
-                        for unicode, boolean in zip(unicodelist, Normal.boollist):
-                            x = r'"TaskQueue.{}.IsChecked"'.format(unicode)
-                            if re.search(x + r': ".*",', text):  # 正则匹配
-                                replace = re.sub(x + r': ".*",', x + ': "{}",'.format(boolean), text)  # re替换字符串
-                                f2.write(replace)  # 写入
-                                match = True  # 匹配成功
-                                break
-                        if not match:  # 匹配失败
-                            f2.write(text)  # 写入
-
-
-# Rougelike模式
-class Rougelike:
-    boollist = [
+    rougelike_boollist = [
         False,
         False,
         False,
@@ -154,14 +132,17 @@ class Rougelike:
     ]
 
     def __init__(self):
+        self.current_mode = "Normal"
+
+    def set_normal(self):
         if not test("MAA.exe", Ordinary.maa):  # 检测MAA进程
-            with open(json, 'r', encoding='utf-8') as f1:
+            with open(gui_json, 'r', encoding='utf-8') as f1:
                 read = f1.readlines()  # 读取gui.json文件内容
-                with open(json, 'w', encoding='utf-8') as f2:
+                with open(gui_json, 'w', encoding='utf-8') as f2:
                     for text in read:  # 读取gui.json每一行内容
                         match = False  # 匹配标志
-                        for unicode, boolean in zip(unicodelist, Rougelike.boollist):
-                            x = r'"TaskQueue.{}.IsChecked"'.format(unicode)
+                        for unicode, boolean in zip(unicodelist, Mode.normal_boollist):
+                            x = r'"TaskQueue.{}.IsChecked"'.format(unicode)  # 关键字
                             if re.search(x + r': ".*",', text):  # 正则匹配
                                 replace = re.sub(x + r': ".*",', x + ': "{}",'.format(boolean), text)  # re替换字符串
                                 f2.write(replace)  # 写入
@@ -169,3 +150,26 @@ class Rougelike:
                                 break
                         if not match:  # 匹配失败
                             f2.write(text)  # 写入
+            self.current_mode = "normal"  # 更新当前模式为normal
+
+    def set_rougelike(self):
+        if not test("MAA.exe", Ordinary.maa):  # 检测MAA进程
+            with open(gui_json, 'r', encoding='utf-8') as f1:
+                read = f1.readlines()  # 读取gui.json文件内容
+                with open(gui_json, 'w', encoding='utf-8') as f2:
+                    for text in read:  # 读取gui.json每一行内容
+                        match = False  # 匹配标志
+                        for unicode, boolean in zip(unicodelist, Mode.rougelike_boollist):
+                            x = r'"TaskQueue.{}.IsChecked"'.format(unicode)  # 关键字
+                            if re.search(x + r': ".*",', text):  # 正则匹配
+                                replace = re.sub(x + r': ".*",', x + ': "{}",'.format(boolean), text)  # re替换字符串
+                                f2.write(replace)  # 写入
+                                match = True  # 匹配成功
+                                break
+                        if not match:  # 匹配失败
+                            f2.write(text)  # 写入
+            self.current_mode = "rougelike"  # 更新当前模式为rougelike
+
+    @classmethod
+    def get_current_mode(cls):
+        return cls().current_mode

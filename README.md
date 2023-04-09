@@ -10,22 +10,24 @@
 并且通过内网穿透以达到远程控制(默认使用的是[星空内网穿透](https://frp.starryfrp.com/))<br>
 ## 功能
 ### Ordinary模式
-- Kill可以终止MAA和模拟器的运行(如果是SpecialKill,还会终止AutoMaa程序,如果不想使用AutoMaa,可以在7点半后运行SpecialKill终止进程)
-- Start可以中途打开MAA(如果是SpecialKill)
-- LogNow查看正在启动的MAA的日志
+- Start可以随时打开MAA(除非已经有MAA正在运行)
+- Kill可以终止MAA和模拟器的运行
+- LogNow适用于查看MAA最新的log日志
 - Log查看MAA近期日志(1000行以内,超过1000行移至LogLast)
 - LogLast查看更早的MAA日志
+- Default将关卡选择切换为当前/上次
+- Rougelike只运行集成战略(目前会被定时任务阻断,待更新)
 
 ### Special模式
-- Kill可以终止AutoMaa定时计划程序和MAA以及模拟器的运行
 - Start可以中途打开MAA(8点前打开,则为添加任务计划)
-- LogNow适用于MAA正在运行时查看log日志
+- Kill可以终止MAA以及模拟器的运行)(7点半后运行会终止AutoMaa定时计划程序)
+- LogNow适用于查看MAA最新的log日志
 - Log包含了近期的MAA运行日志(1000行以内,超过1000行移至LogLast)
 - LogLast是MAA旧的运行日志
 
 ### 杂项
 - Todesk是打开Todesk程序(远控软件)
-- Shutdown5分钟后电脑关机
+- Shutdown2分钟后电脑关机
 - CancelShutdown中途阻止电脑关机
 
 # 安装说明
@@ -35,12 +37,14 @@
 - 下载并安装[python3.9](https://www.python.org/downloads/)(默认使用python3.9.6)
 - WIN+R,输入cmd,确定,输入pip install -r D:\AutoMaa\Python\requirements.txt
 - 等待外部库导入成功后运行D:\AutoMaa\Python\Initialization\Initialization.py
-- 如果python解释器使用conda虚拟环境的话(将D:\AutoMaa\Python\Initialization\interpreter.txt的内容改为conda,并更改所有vbs文件中的conda环境名,默认conda环境名为Automaa)
+- 如果python解释器使用conda虚拟环境的话(默认使用python,不需要更改)
+  - 打开D:\AutoMaa\Python\Initialization\interpreter.json
+  - 更改vbs对象中的environment值为conda并更改environment_name值为此项目的虚拟环境名
 
-## 模拟器([关于模拟器支持情况和ADB设置](https://maa.plus/docs/1.3-%E6%A8%A1%E6%8B%9F%E5%99%A8%E6%94%AF%E6%8C%81.html))
+## 模拟器([查看模拟器支持情况和ADB设置](https://maa.plus/docs/1.3-%E6%A8%A1%E6%8B%9F%E5%99%A8%E6%94%AF%E6%8C%81.html))
 - 建议使用[蓝叠模拟器5国际版](https://wp-s.bluestacks.com/)
 - 如果双模式同时使用,推荐[蓝叠模拟器5国际版](https://wp-s.bluestacks.com/)和[夜神模拟器](https://www.yeshen.com/)
-- 请在Maa设置中设置模拟器路径(D:\AutoMaa\Python\Module\Module.py)
+- 请在MAA设置中设置模拟器路径(D:\AutoMaa\Python\Module\Module.py)
   - 蓝叠5默认位置C:\Program Files\BlueStacks_nxt\HD-Player.exe
   - 夜神默认位置D:\Program Files\Nox\bin\Nox.exe
 
@@ -54,6 +58,11 @@
 - 自定义任务计划,建议启动程序设置起始于(文件夹),然后再启动程序<br>
 ![Image text](https://github.com/Lzhyrifx/AutoMaa/blob/master/Demonstrate/Start.png)
 
+# 使用须知
+- 强烈建议解压至D盘使用(后续将会支持其他路径)
+- 集成战略(默认皆为水月主题,如要更换,MAA设置中更换)
+  - 请将要打的集成战略主题添加至终端
+  - 如果要打水月主题请结束傀影主题的进程(反之亦然)
   
 
   
@@ -69,25 +78,25 @@
 - 默认使用星空内网穿透
   - [获取启动命令](https://frp.starryfrp.com/console/Proxies)
   - 复制启动命令输入Start.bat(保持远程状态,此窗口不能关闭)
-## 远控须知
+# 远控须知
 - 访问网站即可远程控制,如:http://xxx(隧道名).starryfrp.com:XXXXX(端口名)/XY(X为模式名,Y为远控函数名)
 ### 远程访问
 ### Ordinary模式
 - http://xxx.starryfrp.com:XXXXX/OrdinaryStart启动MAA
-- http://xxx.starryfrp.com:XXXXX/OrdinaryKill终止MAA进程
+- http://xxx.starryfrp.com:XXXXX/OrdinaryKill终止MAA进程和模拟器进程
 - http://xxx.starryfrp.com:XXXXX/OrdinaryLogNow查看正在启动的MAA的日志
 - http://xxx.starryfrp.com:XXXXX/OrdinaryLog查看MAA近期日志
 - http://xxx.starryfrp.com:XXXXX/OrdinaryLogLast查看更早的MAA日志
 - http://xxx.starryfrp.com:XXXXX/OrdinaryDefault将关卡选择切换为当前/上次
-- http://xxx.starryfrp.com:XXXXX/OrdinaryRougelike启动MAA肉鸽模式,只打肉鸽
+- http://xxx.starryfrp.com:XXXXX/OrdinaryRougelike只运行集成战略(目前会被定时任务阻断,待更新)
 ### Special模式
 - http://xxx.starryfrp.com:XXXXX/SpecialStart启动MAA
-- http://xxx.starryfrp.com:XXXXX/SpecialKill终止MAA进程
+- http://xxx.starryfrp.com:XXXXX/SpecialKill终止MAA进程和模拟器进程
 - http://xxx.starryfrp.com:XXXXX/SpecialLogNow查看正在启动的MAA的日志
 - http://xxx.starryfrp.com:XXXXX/SpecialLog查看MAA近期日志
 - http://xxx.starryfrp.com:XXXXX/SpecialLogLast查看更早的MAA日志
 
 ### 杂项
 - http://xxx.starryfrp.com:XXXXX/Todesk运行Todesk远控软件(默认路径为D:\Program Files (x86)\ToDesk.exe)
-- http://xxx.starryfrp.com:XXXXX/Shutdown5分钟后电脑关机
+- http://xxx.starryfrp.com:XXXXX/Shutdown2分钟后电脑关机
 - http://xxx.starryfrp.com:XXXXX/CancelShutdown中途阻止电脑关机
