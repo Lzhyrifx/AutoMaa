@@ -79,6 +79,12 @@ OrdinaryRougelike(ByRef req, ByRef res) {
     run, "D:\AutoMaa\Python\Ordinary\Rougelike.vbs"
 }
 
+OrdinaryTaskShelved(ByRef req, ByRef res) {
+    res.SetBodyText("TaskShelved")
+    res.status := 200
+    run, "D:\AutoMaa\Python\Ordinary\TaskShelved.vbs"
+}
+
 SpecialStart(ByRef req, ByRef res) {
     res.SetBodyText("Starting...")
     res.status := 200
@@ -107,6 +113,12 @@ SpecialLogLast(ByRef req, ByRef res) {
     FileRead,SpecialLog,D:\AutoMaa\Python\Special\gui.bak.log
     res.SetBodyText(SpecialLogLast)
     res.status := 200
+}
+
+SpecialTaskShelved(ByRef req, ByRef res) {
+    res.SetBodyText("TaskShelved")
+    res.status := 200
+    run, "D:\AutoMaa\Python\Special\TaskShelved.vbs"
 }
 
 Todesk(ByRef req, ByRef res) {

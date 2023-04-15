@@ -1,4 +1,4 @@
-from Module.Module import *
+from automaa.automaa import *
 import cv2
 import pyautogui
 import pyscreeze

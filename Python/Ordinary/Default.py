@@ -1,4 +1,4 @@
-from Module import *
+from automaa import *
 
 if not test("MAA.exe", Ordinary.maa):
     with open(gui_json, 'r', encoding='utf-8') as f1:

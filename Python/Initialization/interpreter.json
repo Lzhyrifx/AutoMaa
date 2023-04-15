@@ -1,6 +1,10 @@
 {
-  "vbs":{
-    "environment": "Python",
-    "environment_name": "AutoMaa"
-  }
+    "vbs": {
+        "environment": "Conda",
+        "environment_name": "AutoMaa"
+    },
+    "rougelike": {
+        "mode": "Normal",
+        "relay": "False"
+    }
 }
