@@ -16,7 +16,8 @@
 - Log查看MAA近期日志(1000行以内,超过1000行移至LogLast)
 - LogLast查看更早的MAA日志
 - Default将关卡选择切换为当前/上次
-- Rougelike运行集成战略(目前会被定时任务阻断,待更新)
+- Rougelike运行集成战略
+- TaskShelved搁置下一次计划任务
 
 ### Special模式
 - Start可以中途打开MAA(8点前打开,则为添加任务计划)
@@ -24,6 +25,7 @@
 - LogNow适用于查看MAA最新的log日志
 - Log包含了近期的MAA运行日志(1000行以内,超过1000行移至LogLast)
 - LogLast是MAA旧的运行日志
+- TaskShelved搁置下一次计划任务
 
 ### 杂项
 - Todesk是打开Todesk程序(远控软件)
@@ -90,12 +92,14 @@
 - http://xxx.starryfrp.com:XXXXX/OrdinaryLogLast查看更早的MAA日志
 - http://xxx.starryfrp.com:XXXXX/OrdinaryDefault将关卡选择切换为当前/上次
 - http://xxx.starryfrp.com:XXXXX/OrdinaryRougelike只运行集成战略(目前会被定时任务阻断,待更新)
+- http://xxx.starryfrp.com:XXXXX/OrdinaryTaskShelved搁置下一次任务
 ### Special模式
 - http://xxx.starryfrp.com:XXXXX/SpecialStart启动MAA
 - http://xxx.starryfrp.com:XXXXX/SpecialKill终止MAA进程和模拟器进程
 - http://xxx.starryfrp.com:XXXXX/SpecialLogNow查看正在启动的MAA的日志
 - http://xxx.starryfrp.com:XXXXX/SpecialLog查看MAA近期日志
 - http://xxx.starryfrp.com:XXXXX/SpecialLogLast查看更早的MAA日志
+- http://xxx.starryfrp.com:XXXXX/SpecialTaskShelved搁置下一次任务
 
 ### 杂项
 - http://xxx.starryfrp.com:XXXXX/Todesk运行Todesk远控软件(默认路径为D:\Program Files (x86)\ToDesk.exe)
