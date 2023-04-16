@@ -1,6 +1,6 @@
 {
     "vbs": {
-        "environment": "Python",
+        "environment": "Conda",
         "environment_name": "AutoMaa"
     },
     "rougelike": {
