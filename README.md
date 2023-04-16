@@ -17,7 +17,7 @@
 - LogLast查看更早的MAA日志
 - Default将关卡选择切换为当前/上次
 - Rougelike运行集成战略
-- TaskShelved搁置下一次计划任务
+- TaskShelved搁置下一次计划任务(如需临时取消,请运行kill.py)
 
 ### Special模式
 - Start可以中途打开MAA(8点前打开,则为添加任务计划)
@@ -25,7 +25,7 @@
 - LogNow适用于查看MAA最新的log日志
 - Log包含了近期的MAA运行日志(1000行以内,超过1000行移至LogLast)
 - LogLast是MAA旧的运行日志
-- TaskShelved搁置下一次计划任务
+- TaskShelved搁置下一次计划任务(如需临时取消,请运行kill.py)
 
 ### 杂项
 - Todesk是打开Todesk程序(远控软件)

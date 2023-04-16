@@ -25,6 +25,7 @@ unicodelist = [
     r"\\u9886\\u53D6\\u65E5\\u5E38\\u5956\\u52B1",
     r"\\u81EA\\u52A8\\u8089\\u9E3D"
 ]
+# Normal模式配置
 normal_config = [
     True,
     True,
@@ -33,6 +34,7 @@ normal_config = [
     True,
     False
 ]
+# Rougelike模式配置
 rougelike_config = [
     False,
     False,
@@ -91,7 +93,7 @@ def gui_log(file, log, log_bak):  # 整理日志
         pass
 
 
-def json_change(nest, key, value):
+def json_change(nest, key, value):  # 更改配置文件键值
     with open(interpreter, "r") as f:
         config = json.load(f)
     config[nest][key] = value
@@ -99,13 +101,13 @@ def json_change(nest, key, value):
         json.dump(config, f, indent=4)
 
 
-def json_read(nest, key):
+def json_read(nest, key):  # 读取配置文件键值
     with open(interpreter, "r") as f:
         config = json.load(f)
     return config.get(nest).get(key)
 
 
-def rougelike_judge():
+def rougelike_judge():  # 判断Rougelike模式
     if test("MAA.exe", Ordinary.maa) and json_read("rougelike", "mode") == "Rougelike":
         admin()  # 提权
         kill("MAA.exe", Ordinary.maa)  # 终止MAA进程
@@ -113,7 +115,7 @@ def rougelike_judge():
         json_change("rougelike", "relay", "True")
 
 
-def set_normal():
+def set_normal():  # 设置Normal模式
     if not test("MAA.exe", Ordinary.maa):  # 检测MAA进程
         with open(gui_json, 'r', encoding='utf-8') as f1:
             read = f1.readlines()  # 读取gui.json文件内容
@@ -132,7 +134,7 @@ def set_normal():
         json_change("rougelike", "mode", "Normal")
 
 
-def set_rougelike():
+def set_rougelike():  # 设置Rougelike模式
     if not test("MAA.exe", Ordinary.maa):  # 检测MAA进程
         with open(gui_json, 'r', encoding='utf-8') as f1:
             read = f1.readlines()  # 读取gui.json文件内容

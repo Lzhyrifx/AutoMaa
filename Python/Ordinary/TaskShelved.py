@@ -1,6 +1,6 @@
 from automaa import *
 
-# 任务搁置
+# 计划任务搁置
 schedule.every().day.at("00:55:00").do(start, x=r"D:\AutoMaa\Python\Ordinary\Kill.py")
 schedule.every().day.at("00:56:00").do(sys.exit)
 schedule.every().day.at("08:55:00").do(start, x=r"D:\AutoMaa\Python\Ordinary\Kill.py")
