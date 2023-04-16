@@ -1,5 +1,5 @@
 # AutoMaa
-- 基于[MaaAssistantArknights](https://github.com/MaaAssistantArknights/MaaAssistantArknights)的附属<br>
+- 基于[MaaAssistantArknights](https://github.com/MaaAssistantArknights/MaaAssistantArknights)的附属(MaaAssistantArknights简称为MAA)<br>
 - 包括更多功能的定时执行任务和远程控制
 ## 定时执行任务
 包括Ordinary和Special模式(中途可通过远程控制开关AutoMaa)
