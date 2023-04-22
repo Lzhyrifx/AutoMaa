@@ -1,3 +1,4 @@
+import configparser
 import ctypes
 import json
 import os
@@ -8,12 +9,15 @@ import time
 import psutil
 import schedule
 
-nox = r"D:\Program Files\Nox\bin\Nox.exe"  # 夜神模拟器路径
-bluestack = r"C:\Program Files\BlueStacks_nxt\HD-Player.exe"  # 蓝叠模拟器路径
-python = r"C:\Users\Lzhyrifx\AppData\Local\Programs\Python\Python39\python.exe"  # python路径
-capture_update = r"D:\AutoMaa\Python\CaptureUpdate.py"  # 检测更新程序
-gui_json = r"D:\AutoMaa\Python\Ordinary\MAA\config\gui.json"  # MAA配置文件
-interpreter = r"D:\AutoMaa\Python\Initialization\interpreter.json"
+paths = configparser.ConfigParser()
+paths.read(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'paths.ini'))
+source = os.path.dirname(os.getcwd())  # 源文件夹
+nox = paths.get('paths', 'nox')  # 夜神模拟器路径
+bluestack = paths.get('paths', 'bluestack')  # 蓝叠模拟器路径
+python = paths.get('paths', 'python')  # python路径
+interpreter = os.path.join(source, r'Initialization\interpreter.json')  # 配置文件路径
+capture_update = os.path.join(source, 'CaptureUpdate.py')  # 检测更新程序
+gui_json = os.path.join(source, r'Ordinary\MAA\config\gui.json')
 data = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())  # 获取时间
 line = '=' * 100 + '\n'  # 分割线
 # unicode列表
@@ -169,17 +173,17 @@ def start(x):
 
 
 class Ordinary:
-    maa = r"D:\AutoMaa\Python\Ordinary\MAA\MAA.exe"  # MAA路径
+    maa = os.path.join(source, r'Ordinary\MAA\MAA.exe')  # MAA路径
     # 日志文件
-    file = r"D:\AutoMaa\Python\Ordinary\MAA\debug\gui.log"
-    log = r"D:\AutoMaa\Python\Ordinary\gui.log"
-    log_bak = r"D:\AutoMaa\Python\Ordinary\gui.bak.log"
+    file = os.path.join(source, r'Ordinary\MAA\debug\gui.log')
+    log = os.path.join(source, r'Ordinary\gui.log')
+    log_bak = os.path.join(source, r'Ordinary\gui.bak.log')
 
 
 class Special:
-    maa_first = r"D:\AutoMaa\Python\Special\MAA1\MAA.exe"  # MAA1路径
-    maa_second = r"D:\AutoMaa\Python\Special\MAA2\MAA.exe"  # MAA2路径
+    maa_first = os.path.join(source, r'Special\MAA1\MAA.exe')  # MAA1路径
+    maa_second = os.path.join(source, r'Special\MAA2\MAA.exe')  # MAA2路径
     # 日志文件
-    file = r"D:\AutoMaa\Python\Special\MAA1\debug\gui.log"
-    log = r"D:\AutoMaa\Python\Special\gui.log"
-    log_bak = r"D:\AutoMaa\Python\Special\gui.bak.log"
+    file = os.path.join(source, r'Special\MAA1\debug\gui.log')
+    log = os.path.join(source, r'Special\gui.log')
+    log_bak = os.path.join(source, r'Special\gui.bak.log')

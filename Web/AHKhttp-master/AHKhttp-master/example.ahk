@@ -2,6 +2,10 @@
 #SingleInstance, force
 SetBatchLines, -1
 FileEncoding,UTF-8
+path := A_ScriptDir
+SplitPath, path, name, dir, ext, name_no_ext
+source := StrReplace(dir, "Web\AHKhttp-master", "Python")
+
 paths := {}
 paths["/"] := Func("Null")
 paths["404"] := Func("NotFound")
@@ -42,29 +46,34 @@ Null(ByRef req, ByRef res) {
 OrdinaryStart(ByRef req, ByRef res) {
     res.SetBodyText("Starting...")
     res.status := 200
-    run, "D:\AutoMaa\Python\Ordinary\Start.vbs"
+    combined_path := source . "\Ordinary\Start.vbs"
+    run, %combined_path%
 }
 
 OrdinaryKill(ByRef req, ByRef res) {
     res.SetBodyText("Killing...")
     res.status := 200
-    run, "D:\AutoMaa\Python\Ordinary\Kill.vbs"
+    combined_path := source . "\Ordinary\Kill.vbs"
+    run, %combined_path%
 }
 
 OrdinaryLogNow(ByRef req, ByRef res) {
-    FileRead,OrdinaryLog,D:\AutoMaa\Python\Ordinary\MAA\debug\gui.log
+    combined_path := source . "\Ordinary\MAA\debug\gui.log"
+    FileRead,OrdinaryLogNow,%combined_path%
     res.SetBodyText(OrdinaryLogNow)
     res.status := 200
 }
 
 OrdinaryLog(ByRef req, ByRef res) {
-    FileRead,OrdinaryLog,D:\AutoMaa\Python\Ordinary\gui.log
+    combined_path := source . "\Ordinary\gui.log"
+    FileRead,OrdinaryLog,%combined_path%
     res.SetBodyText(OrdinaryLog)
     res.status := 200
 }
 
 OrdinaryLogLast(ByRef req, ByRef res) {
-    FileRead,OrdinaryLog,D:\AutoMaa\Python\Ordinary\gui.bak.log
+    combined_path := source . "\Ordinary\gui.bak.log"
+    FileRead,OrdinaryLogLast,%combined_path%
     res.SetBodyText(OrdinaryLogLast)
     res.status := 200
 }
@@ -72,47 +81,55 @@ OrdinaryLogLast(ByRef req, ByRef res) {
 OrdinaryDefault(ByRef req, ByRef res) {
     res.SetBodyText("Default")
     res.status := 200
-    run, "D:\AutoMaa\Python\Ordinary\Default.vbs"
+    combined_path := source . "\Ordinary\Default.vbs"
+    run, %combined_path%
 }
 
 OrdinaryRougelike(ByRef req, ByRef res) {
     res.SetBodyText("Rougelike")
     res.status := 200
-    run, "D:\AutoMaa\Python\Ordinary\Rougelike.vbs"
+    combined_path := source . "\Ordinary\Rougelike.vbs"
+    run, %combined_path%
 }
 
 OrdinaryTaskShelved(ByRef req, ByRef res) {
     res.SetBodyText("TaskShelved")
     res.status := 200
-    run, "D:\AutoMaa\Python\Ordinary\TaskShelved.vbs"
+    combined_path := source . "\Ordinary\TaskShelved.vbs"
+    run, %combined_path%
 }
 
 SpecialStart(ByRef req, ByRef res) {
     res.SetBodyText("Starting...")
     res.status := 200
-    run, "D:\AutoMaa\Python\Special\Start.vbs"
+    combined_path := source . "\Special\Start.vbs"
+    run, %combined_path%
 }
 
 SpecialKill(ByRef req, ByRef res) {
     res.SetBodyText("Killing...")
     res.status := 200
-    run, "D:\AutoMaa\Python\Special\Kill.vbs"
+    combined_path := source . "\Special\Kill.vbs"
+    run, %combined_path%
 }
 
 SpecialLogNow(ByRef req, ByRef res) {
-    FileRead,SpecialLog,D:\AutoMaa\Python\Special\MAA1\debug\gui.log
+    combined_path := source . "\Special\MAA1\debug\gui.log"
+    FileRead,SpecialLogNow,%combined_path%
     res.SetBodyText(SpecialLogNow)
     res.status := 200
 }
 
 SpecialLog(ByRef req, ByRef res) {
-    FileRead,SpecialLog,D:\AutoMaa\Python\Special\gui.log
+    combined_path := source . "\Special\gui.log"
+    FileRead,SpecialLog,%combined_path%
     res.SetBodyText(SpecialLog)
     res.status := 200
 }
 
 SpecialLogLast(ByRef req, ByRef res) {
-    FileRead,SpecialLog,D:\AutoMaa\Python\Special\gui.bak.log
+    combined_path := source . "\Special\gui.bak.log"
+    FileRead,SpecialLogLast,%combined_path%
     res.SetBodyText(SpecialLogLast)
     res.status := 200
 }
@@ -120,7 +137,8 @@ SpecialLogLast(ByRef req, ByRef res) {
 SpecialTaskShelved(ByRef req, ByRef res) {
     res.SetBodyText("TaskShelved")
     res.status := 200
-    run, "D:\AutoMaa\Python\Special\TaskShelved.vbs"
+    combined_path := source . "\Special\TaskShelved.vbs"
+    run, %combined_path%
 }
 
 Todesk(ByRef req, ByRef res) {

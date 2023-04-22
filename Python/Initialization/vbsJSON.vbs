@@ -287,18 +287,18 @@ Class vbsJSON
 
     Public Function environmentJudge(path)
         Set fso = CreateObject("Scripting.FileSystemObject")
-        Set file = fso.OpenTextFile("D:\AutoMaa\Python\Initialization\interpreter.json", 1)
+        script_path = WScript.ScriptFullName
+        script_folder = Left(script_path, InStrRev(script_path, "\")) ' 获取脚本文件所在的文件夹路径
+        source_folder = Left(script_folder, InStrRev(Left(script_folder, InStrRev(script_folder, "\")-1), "\")-1) ' 获取源路径
+        Set file = fso.OpenTextFile(source_folder & "\Initialization\interpreter.json", 1)
         jsonString = file.ReadAll()
-
+        source = decode(jsonString)("source")
         ' 判断
         If decode(jsonString)("vbs")("environment") = "Python" Then
-            environmentpath = "D:\AutoMaa\Python\" & path
+            environmentpath = source & "\AutoMaa\Python\" & path
         ElseIf decode(jsonString)("vbs")("environment") = "Conda" Then
-            environmentpath = "conda run -n " & decode(jsonString)("vbs")("environment_name") & " python D:\AutoMaa\Python\" & path
-        Else
-            environmentpath = "D:\AutoMaa\Python\" & path
+            environmentpath = "conda run -n " & decode(jsonString)("vbs")("environment_name") & " python " & source & "\AutoMaa\Python\" & path
         End If
-
         ' 释放内存
         file.Close
         Set file = Nothing

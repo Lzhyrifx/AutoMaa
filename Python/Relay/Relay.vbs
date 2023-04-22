@@ -8,5 +8,5 @@ Set json = New vbsJSON
 ' 创建一个 WScript.Shell 对象
 set ws=WScript.CreateObject("WScript.Shell")
 ' 使用对应模式运行python程序
-filepath = json.environmentJudge("Ordinary\Rougelike.py")
+filepath = json.environmentJudge("Relay\Relay.py")
 ws.Run filepath,0
