@@ -33,14 +33,16 @@
 - CancelShutdown中途阻止电脑关机
 
 # 安装说明
+- 以下AutoMaa路径省略AutoMaa文件夹以上的目录,输入请输入完整路径
 ## 快速部署
 - 下载最新的[AutoMaa](https://github.com/Lzhyrifx/AutoMaa/releases)
 - 解压(默认为D盘)
 - 下载并安装[python3.9](https://www.python.org/downloads/)(默认使用python3.9.6)
-- WIN+R,输入cmd,确定,输入pip install -r requirements.txt(请使用绝对路径,如D:\AutoMaa\Python\Initialization\requirements.txt)
+- WIN+R,输入cmd,确定,输入pip install -r AutoMaa\Python\Initialization\requirements.txt(绝对路径,如D:\AutoMaa\Python\Initialization\requirements.txt)
 - 等待外部库导入成功后运行AutoMaa\Python\Initialization\Initialization.py
-- AutoMaa\Python\automaa\paths.ini中使用相应路径
+- AutoMaa\Python\automaa\paths.ini中设置对应路径(蓝叠模拟器路径,夜神模拟器,Python路径)
 - AutoMaa\Python\Initialization\interpreter.json设置source的键为AutoMaa所在文件夹
+- D:\AutoMaa\Python\(Ordinary&Special)\ScheduledTask\Start.bat中的路径设置为AutoMaa\Python\(Ordinary&Special)\Start.vbs(绝对路径)
 - 请在MAA设置中设置模拟器路径
 - 如果python解释器使用conda虚拟环境的话(默认使用Python)
   - 打开AutoMaa\Python\Initialization\interpreter.json
