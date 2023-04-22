@@ -35,25 +35,25 @@
 # 安装说明
 ## 快速部署
 - 下载最新的[AutoMaa](https://github.com/Lzhyrifx/AutoMaa/releases)
-- 解压至D盘(如果解压到其他盘需要更改程序中的变量路径)
+- 解压(默认为D盘)
 - 下载并安装[python3.9](https://www.python.org/downloads/)(默认使用python3.9.6)
-- WIN+R,输入cmd,确定,输入pip install -r D:\AutoMaa\Python\requirements.txt
-- 等待外部库导入成功后运行D:\AutoMaa\Python\Initialization\Initialization.py
-- 如果python解释器使用conda虚拟环境的话(默认使用Python,不需要更改)
-  - 打开D:\AutoMaa\Python\Initialization\interpreter.json
+- WIN+R,输入cmd,确定,输入pip install -r requirements.txt(请使用绝对路径,如D:\AutoMaa\Python\Initialization\requirements.txt)
+- 等待外部库导入成功后运行AutoMaa\Python\Initialization\Initialization.py
+- AutoMaa\Python\automaa\paths.ini中使用相应路径
+- AutoMaa\Python\Initialization\interpreter.json设置source的键为AutoMaa所在文件夹
+- 请在MAA设置中设置模拟器路径
+- 如果python解释器使用conda虚拟环境的话(默认使用Python)
+  - 打开AutoMaa\Python\Initialization\interpreter.json
   - 更改vbs对象中的environment值为Conda并更改environment_name值为此项目的虚拟环境名(默认为AutoMaa)
 
 ## 模拟器([查看模拟器支持情况和ADB设置](https://maa.plus/docs/1.3-%E6%A8%A1%E6%8B%9F%E5%99%A8%E6%94%AF%E6%8C%81.html))
 - 建议使用[蓝叠模拟器5国际版](https://wp-s.bluestacks.com/)
 - 如果双模式同时使用,推荐[蓝叠模拟器5国际版](https://wp-s.bluestacks.com/)和[夜神模拟器](https://www.yeshen.com/)
-- 请在MAA设置中设置模拟器路径(D:\AutoMaa\Python\Module\Module.py)
-  - 蓝叠5默认位置C:\Program Files\BlueStacks_nxt\HD-Player.exe
-  - 夜神默认位置D:\Program Files\Nox\bin\Nox.exe
 
 ## 定时任务
 - 在文件资源管理器右键此电脑,选择任务计划程序,导入任务(Ordinary&Special)
-  - [Ordinary](https://github.com/Lzhyrifx/AutoMaa/blob/master/Python/Ordinary/ScheduledTask/OrdinaryAutoMaa.xml)的路径在D:\AutoMaa\Python\Ordinary\ScheduledTask\OrdinaryAutoMaa.xml
-  - [Special](https://github.com/Lzhyrifx/AutoMaa/blob/master/Python/Special/ScheduledTask/SpecialAutoMaa.xml)的路径在D:\AutoMaa\Python\Special\ScheduledTask\SpecialAutoMaa.xml
+  - [Ordinary](https://github.com/Lzhyrifx/AutoMaa/blob/master/Python/Ordinary/ScheduledTask/OrdinaryAutoMaa.xml)的路径在AutoMaa\Python\Ordinary\ScheduledTask\OrdinaryAutoMaa.xml
+  - [Special](https://github.com/Lzhyrifx/AutoMaa/blob/master/Python/Special/ScheduledTask/SpecialAutoMaa.xml)的路径在AutoMaa\Python\Special\ScheduledTask\SpecialAutoMaa.xml
 - 注意:每次更改任务计划都需要重新选择用户和组,否则会报参数错误<br>
 ![Image text](https://github.com/Lzhyrifx/AutoMaa/blob/master/Demonstrate/TaskScheduler.png)
 - 如果希望AutoMaa在后台使用,可以勾选"不管用户是否登录都要运行"(此功能不推荐,模拟器还是会最小化前台,并且关闭Maa只能通过任务管理器终止进程或使用AutoMaa的Kill.py)
@@ -61,7 +61,7 @@
 ![Image text](https://github.com/Lzhyrifx/AutoMaa/blob/master/Demonstrate/Start.png)
 
 # 使用须知
-- AutoMaa强烈建议解压至D盘使用(后续将会支持其他路径)
+- AutoMaa建议解压至D盘使用(默认为D盘)
 - 由于MAA目前不支持多开,故AutoMaa程序运行前提是不存在其他运行的MAA(比如OrdinaryRougelike运行前提是Ordinary&Special定时运行的MAA不存在)
 - 集成战略(默认皆为水月主题,如要更换,MAA设置中更换)
   - 如果要打水月主题,请结束傀影主题的进程(反之亦然)
@@ -72,12 +72,12 @@
 # 远程控制
 ## AutoHotkey
 - 下载[AutoHotkey](https://www.autohotkey.com/)v1.1
-- example.ahk第27行为自定义端口号(默认为1024)
+- AutoMaa\Web\AHKhttp-master\AHKhttp-master\example.ahk第33行为自定义端口号(默认为1024)
 ## 内网穿透(默认使用[星空内网穿透](https://frp.starryfrp.com/))
 - 创建隧道,除了自定义端口外其他默认(自定义端口号默认为1024)
 ## 启用内网穿透
-- 运行D:\AutoMaa\Web\AHKhttp-master\AHKhttp-master\example.ahk(无报错则启动成功)
-- 运行D:\AutoMaa\Web\frpc_windows_amd64\Start.bat
+- 运行AutoMaa\Web\AHKhttp-master\AHKhttp-master\example.ahk(无报错则启动成功)
+- 运行AutoMaa\Web\frpc_windows_amd64\Start.bat
 - 默认使用星空内网穿透
   - [获取启动命令](https://frp.starryfrp.com/console/Proxies)
   - 复制启动命令输入Start.bat(保持远程状态,此窗口不能关闭)
