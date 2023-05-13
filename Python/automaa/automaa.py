@@ -10,7 +10,7 @@ import psutil
 import schedule
 
 paths = configparser.ConfigParser()
-paths.read(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'paths.ini'))
+paths.read(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'paths.ini'))  # 读取paths.ini
 source = os.path.dirname(os.getcwd())  # 源文件夹
 nox = paths.get('paths', 'nox')  # 夜神模拟器路径
 bluestack = paths.get('paths', 'bluestack')  # 蓝叠模拟器路径
@@ -76,25 +76,24 @@ def test(x, y):  # 判断进程是否存活
 
 def gui_log(file, log, log_bak):  # 整理日志
     try:
-        with open(file, 'r', encoding='utf-8') as f1:
+        with open(file, 'r', encoding='utf-8', errors='ignore') as f1:
             read = f1.readlines()  # 读取日志文件
-            with open(log, 'a+') as f2:
+            with open(log, 'a+', encoding='utf-8', errors='ignore') as f2:
                 f2.write(line + ("{:=^106s}".format(data)) + '\n' + line + '\n')  # 分割线
                 for i in read:
                     f2.write(i)  # 遍历内容
                 f2.write('\n')
-            count = len(open(log, 'r').readlines())  # 读取文件行数
-            os.remove(file)
+            count = len(open(log, 'r', encoding='utf-8', errors='ignore').readlines())  # 读取文件行数
+            open(file, 'w').close()
         if count > 1000:  # 行数超过1000行转移日志内容
-            with open(log, 'r+') as f3:
+            with open(log, 'r', encoding='utf-8', errors='ignore') as f3:
                 cache = f3.readlines()
-                with open(log_bak, 'a+') as f4:
+                with open(log_bak, 'a+', encoding='utf-8', errors='ignore') as f4:
                     for i in cache:
                         f4.write(i)
-                f3.seek(0)  # 指定所有行
-                f3.truncate()  # 清除所有行
-    except FileNotFoundError:
-        pass
+            open(log, 'w').close()
+    except PermissionError:
+        admin()
 
 
 def json_change(nest, key, value):  # 更改配置文件键值
