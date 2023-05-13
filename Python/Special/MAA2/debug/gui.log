@@ -1,0 +1,62 @@
+[2023-05-07 17:04:47.039] <1><> ===================================
+[2023-05-07 17:04:47.049] <1><> MaaAssistantArknights GUI started
+[2023-05-07 17:04:47.049] <1><> Maa ENV: Production
+[2023-05-07 17:04:47.051] <1><> ===================================
+[2023-05-07 17:04:47.329] <1><> Rebuild Default HttpClient with proxy 
+[2023-05-07 17:04:47.337] <1><> Rebuild Downloader HttpClient with proxy 
+[2023-05-07 17:04:47.675] <1><> Loading item list from D:\AutoMaa\Python\Special\MAA2\resource\item_index.json
+[2023-05-07 17:04:47.685] <10><> HTTP: OK GET https://ota.maa.plus/MaaAssistantArknights/api/lastUpdateTime.json
+[2023-05-07 17:04:47.769] <11><> HTTP: OK GET https://ota.maa.plus/MaaAssistantArknights/api/gui/StageActivity.json
+[2023-05-07 17:04:47.850] <11><> HTTP: OK GET https://ota.maa.plus/MaaAssistantArknights/api/resource/tasks.json
+[2023-05-07 17:04:57.184] <1><> HTTP: OK GET https://api.github.com/repos/MaaAssistantArknights/MaaRelease/releases
+[2023-05-07 17:04:57.588] <1><> HTTP: OK GET https://api.github.com/repos/MaaAssistantArknights/MaaAssistantArknights/releases/tags/v4.16.4
+[2023-05-07 17:04:58.715] <1><> Start to download file from "https://agent.imgg.dev/MaaAssistantArknights/MaaRelease/releases/download/v4.16.4/MAAComponent-OTA-v4.13.0_v4.16.4-win-x64.zip" and save to D:\AutoMaa\Python\Special\MAA2\MAAComponent-OTA-v4.13.0_v4.16.4-win-x64.zip.temp
+[2023-05-07 17:05:07.794] <1><> HTTP: OK GET https://agent.imgg.dev/MaaAssistantArknights/MaaRelease/releases/download/v4.16.4/MAAComponent-OTA-v4.13.0_v4.16.4-win-x64.zip
+[2023-05-07 17:05:07.858] <1><> Remove download temp file D:\AutoMaa\Python\Special\MAA2\MAAComponent-OTA-v4.13.0_v4.16.4-win-x64.zip.temp
+[2023-05-07 17:05:09.416] <1><> MaaAssistantArknights GUI exited
+[2023-05-07 17:05:09.416] <1><> 
+[2023-05-07 17:05:09.457] <1><> ===================================
+[2023-05-07 17:05:09.468] <1><> MaaAssistantArknights GUI started
+[2023-05-07 17:05:09.468] <1><> Maa ENV: Production
+[2023-05-07 17:05:09.470] <1><> ===================================
+[2023-05-07 17:05:09.701] <1><> Rebuild Default HttpClient with proxy 
+[2023-05-07 17:05:09.710] <1><> Rebuild Downloader HttpClient with proxy 
+[2023-05-07 17:05:11.052] <1><> Attempting to save configuration file after release, this is not allowed
+[2023-05-07 17:05:11.053] <1><> Failed to save configuration TaskQueue.开始唤醒.IsChecked to True
+[2023-05-07 17:05:11.053] <1><> Attempting to save configuration file after release, this is not allowed
+[2023-05-07 17:05:11.053] <1><> Failed to save configuration TaskQueue.自动公招.IsChecked to False
+[2023-05-07 17:05:11.053] <1><> Attempting to save configuration file after release, this is not allowed
+[2023-05-07 17:05:11.053] <1><> Failed to save configuration TaskQueue.基建换班.IsChecked to False
+[2023-05-07 17:05:11.053] <1><> Attempting to save configuration file after release, this is not allowed
+[2023-05-07 17:05:11.053] <1><> Failed to save configuration TaskQueue.刷理智.IsChecked to False
+[2023-05-07 17:05:11.053] <1><> Attempting to save configuration file after release, this is not allowed
+[2023-05-07 17:05:11.053] <1><> Failed to save configuration TaskQueue.获取信用及购物.IsChecked to False
+[2023-05-07 17:05:11.053] <1><> Attempting to save configuration file after release, this is not allowed
+[2023-05-07 17:05:11.053] <1><> Failed to save configuration TaskQueue.领取日常奖励.IsChecked to False
+[2023-05-07 17:05:11.053] <1><> Attempting to save configuration file after release, this is not allowed
+[2023-05-07 17:05:11.053] <1><> Failed to save configuration TaskQueue.自动肉鸽.IsChecked to True
+[2023-05-07 17:05:11.055] <1><> Loading item list from D:\AutoMaa\Python\Special\MAA2\resource\item_index.json
+[2023-05-07 17:05:11.078] <9><> HTTP: OK GET https://ota.maa.plus/MaaAssistantArknights/api/lastUpdateTime.json
+[2023-05-07 17:05:11.119] <1><> Attempting to save configuration file after release, this is not allowed
+[2023-05-07 17:05:11.120] <1><> Failed to save configuration VersionUpdate.isfirstboot to False
+[2023-05-07 17:05:12.402] <1><> Attempting to save configuration file after release, this is not allowed
+[2023-05-07 17:05:12.402] <1><> Failed to save configuration GUI.PositionAndSize.Load to True
+[2023-05-07 17:05:12.402] <1><> Attempting to save configuration file after release, this is not allowed
+[2023-05-07 17:05:12.402] <1><> Failed to save configuration GUI.PositionAndSize.SaveOnClosing to True
+[2023-05-07 17:05:12.402] <1><> Attempting to save configuration file after release, this is not allowed
+[2023-05-07 17:05:12.403] <1><> Failed to save configuration GUI.Monitor.Number to \\.\DISPLAY1
+[2023-05-07 17:05:12.403] <1><> Attempting to save configuration file after release, this is not allowed
+[2023-05-07 17:05:12.403] <1><> Failed to save configuration GUI.Monitor.Width to 1920
+[2023-05-07 17:05:12.403] <1><> Attempting to save configuration file after release, this is not allowed
+[2023-05-07 17:05:12.403] <1><> Failed to save configuration GUI.Monitor.Height to 1080
+[2023-05-07 17:05:12.403] <1><> Attempting to save configuration file after release, this is not allowed
+[2023-05-07 17:05:12.403] <1><> Failed to save configuration GUI.Position.Left to 943
+[2023-05-07 17:05:12.403] <1><> Attempting to save configuration file after release, this is not allowed
+[2023-05-07 17:05:12.403] <1><> Failed to save configuration GUI.Position.Top to 254
+[2023-05-07 17:05:12.403] <1><> Attempting to save configuration file after release, this is not allowed
+[2023-05-07 17:05:12.403] <1><> Failed to save configuration GUI.Size.Width to 800
+[2023-05-07 17:05:12.403] <1><> Attempting to save configuration file after release, this is not allowed
+[2023-05-07 17:05:12.403] <1><> Failed to save configuration GUI.Size.Height to 600
+[2023-05-07 17:05:12.494] <1><> Attempting to save configuration file after release, this is not allowed
+[2023-05-07 17:05:12.495] <1><> MaaAssistantArknights GUI exited
+[2023-05-07 17:05:12.495] <1><> 

@@ -1,0 +1,325 @@
+[2023-05-07 17:01:15.214] <1><> ===================================
+[2023-05-07 17:01:15.466] <1><> MaaAssistantArknights GUI started
+[2023-05-07 17:01:15.511] <1><> Maa ENV: Production
+[2023-05-07 17:01:15.513] <1><> ===================================
+[2023-05-07 17:01:18.727] <1><> Rebuild Default HttpClient with proxy 
+[2023-05-07 17:01:18.758] <1><> Rebuild Downloader HttpClient with proxy 
+[2023-05-07 17:01:20.965] <1><> Loading item list from D:\AutoMaa\Python\Special\MAA1\resource\item_index.json
+[2023-05-07 17:01:22.035] <12><> HTTP: OK GET https://ota.maa.plus/MaaAssistantArknights/api/lastUpdateTime.json
+[2023-05-07 17:01:22.826] <12><> HTTP: OK GET https://ota.maa.plus/MaaAssistantArknights/api/gui/StageActivity.json
+[2023-05-07 17:01:22.870] <9><> HTTP: OK GET https://ota.maa.plus/MaaAssistantArknights/api/resource/tasks.json
+[2023-05-07 17:01:50.054] <1><> Failed to send GET request to "https://api.github.com/repos/MaaAssistantArknights/MaaRelease/releases"
+System.Threading.Tasks.TaskCanceledException: 已取消一个任务。
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 MaaWpfGui.Services.Web.HttpService.<GetAsync>d__9.MoveNext()
+[2023-05-07 17:01:58.161] <13><> HTTP: NotFound GET https://github.com/repos/MaaAssistantArknights/MaaRelease/releases
+[2023-05-07 17:02:13.441] <11><> Failed to send GET request to "https://api.github.com/repos/MaaAssistantArknights/MaaRelease/releases"
+System.Threading.Tasks.TaskCanceledException: 已取消一个任务。
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 MaaWpfGui.Services.Web.HttpService.<GetAsync>d__9.MoveNext()
+[2023-05-07 17:02:19.227] <12><> HTTP: NotFound GET https://github.com/repos/MaaAssistantArknights/MaaRelease/releases
+[2023-05-07 17:02:34.282] <15><> Failed to send GET request to "https://api.github.com/repos/MaaAssistantArknights/MaaRelease/releases"
+System.Threading.Tasks.TaskCanceledException: 已取消一个任务。
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 MaaWpfGui.Services.Web.HttpService.<GetAsync>d__9.MoveNext()
+[2023-05-07 17:02:37.138] <13><> HTTP: NotFound GET https://github.com/repos/MaaAssistantArknights/MaaRelease/releases
+[2023-05-07 17:02:52.484] <1><> 正在停止……
+[2023-05-07 17:03:00.040] <1><> 已停止
+[2023-05-07 17:05:18.814] <1><> Failed to send GET request to "https://api.github.com/repos/MaaAssistantArknights/MaaRelease/releases"
+System.Threading.Tasks.TaskCanceledException: 已取消一个任务。
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 MaaWpfGui.Services.Web.HttpService.<GetAsync>d__9.MoveNext()
+[2023-05-07 17:05:27.193] <12><> HTTP: NotFound GET https://github.com/repos/MaaAssistantArknights/MaaRelease/releases
+[2023-05-07 17:05:42.194] <14><> Failed to send GET request to "https://api.github.com/repos/MaaAssistantArknights/MaaRelease/releases"
+System.Threading.Tasks.TaskCanceledException: 已取消一个任务。
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 MaaWpfGui.Services.Web.HttpService.<GetAsync>d__9.MoveNext()
+[2023-05-07 17:05:57.195] <10><> Failed to send GET request to "https://api.kgithub.com/repos/MaaAssistantArknights/MaaRelease/releases"
+System.Threading.Tasks.TaskCanceledException: 已取消一个任务。
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 MaaWpfGui.Services.Web.HttpService.<GetAsync>d__9.MoveNext()
+[2023-05-07 17:06:10.693] <10><> HTTP: OK GET https://api.github.com/repos/MaaAssistantArknights/MaaRelease/releases
+[2023-05-07 17:06:13.534] <1><> HTTP: OK GET https://api.github.com/repos/MaaAssistantArknights/MaaAssistantArknights/releases/tags/v4.16.4
+[2023-05-07 17:06:13.550] <1><> Start to download file from "https://agent.imgg.dev/MaaAssistantArknights/MaaRelease/releases/download/v4.16.4/MAAComponent-OTA-v4.13.0_v4.16.4-win-x64.zip" and save to D:\AutoMaa\Python\Special\MAA1\MAAComponent-OTA-v4.13.0_v4.16.4-win-x64.zip.temp
+[2023-05-07 17:06:28.561] <1><> Failed to send GET request to "https://agent.imgg.dev/MaaAssistantArknights/MaaRelease/releases/download/v4.16.4/MAAComponent-OTA-v4.13.0_v4.16.4-win-x64.zip"
+System.Threading.Tasks.TaskCanceledException: 已取消一个任务。
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 MaaWpfGui.Services.Web.HttpService.<GetAsync>d__9.MoveNext()
+[2023-05-07 17:06:28.561] <1><> Start to download file from "https://git.114514.pro/https://agent.imgg.dev/MaaAssistantArknights/MaaRelease/releases/download/v4.16.4/MAAComponent-OTA-v4.13.0_v4.16.4-win-x64.zip" and save to D:\AutoMaa\Python\Special\MAA1\MAAComponent-OTA-v4.13.0_v4.16.4-win-x64.zip.temp
+[2023-05-07 17:06:43.563] <1><> Failed to send GET request to "https://git.114514.pro/https://agent.imgg.dev/MaaAssistantArknights/MaaRelease/releases/download/v4.16.4/MAAComponent-OTA-v4.13.0_v4.16.4-win-x64.zip"
+System.Threading.Tasks.TaskCanceledException: 已取消一个任务。
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 MaaWpfGui.Services.Web.HttpService.<GetAsync>d__9.MoveNext()
+[2023-05-07 17:06:43.563] <1><> Start to download file from "https://ghproxy.com/https://git.114514.pro/https://ghproxy.com/https://agent.imgg.dev/MaaAssistantArknights/MaaRelease/releases/download/v4.16.4/MAAComponent-OTA-v4.13.0_v4.16.4-win-x64.zip" and save to D:\AutoMaa\Python\Special\MAA1\MAAComponent-OTA-v4.13.0_v4.16.4-win-x64.zip.temp
+[2023-05-07 17:06:58.564] <1><> Failed to send GET request to "https://ghproxy.com/https://git.114514.pro/https://ghproxy.com/https://agent.imgg.dev/MaaAssistantArknights/MaaRelease/releases/download/v4.16.4/MAAComponent-OTA-v4.13.0_v4.16.4-win-x64.zip"
+System.Threading.Tasks.TaskCanceledException: 已取消一个任务。
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 MaaWpfGui.Services.Web.HttpService.<GetAsync>d__9.MoveNext()
+[2023-05-07 17:06:58.564] <1><> Start to download file from "https://ghproxy.com/https://git.114514.pro/https://ghproxy.com/https://agent.imgg.dev/MaaAssistantArknights/MaaRelease/releases/download/v4.16.4/MAAComponent-OTA-v4.13.0_v4.16.4-win-x64.zip" and save to D:\AutoMaa\Python\Special\MAA1\MAAComponent-OTA-v4.13.0_v4.16.4-win-x64.zip.temp
+[2023-05-07 17:07:04.979] <1><> HTTP: Forbidden GET https://ghproxy.com/https://git.114514.pro/https://ghproxy.com/https://agent.imgg.dev/MaaAssistantArknights/MaaRelease/releases/download/v4.16.4/MAAComponent-OTA-v4.13.0_v4.16.4-win-x64.zip
+[2023-05-07 17:07:04.979] <1><> Start to download file from "https://ghproxy.com/https://git.114514.pro/https://ghproxy.com/https://agent.imgg.dev/MaaAssistantArknights/MaaRelease/releases/download/v4.16.4/MAAComponent-OTA-v4.13.0_v4.16.4-win-x64.zip" and save to D:\AutoMaa\Python\Special\MAA1\MAAComponent-OTA-v4.13.0_v4.16.4-win-x64.zip.temp
+[2023-05-07 17:07:05.315] <1><> HTTP: Forbidden GET https://ghproxy.com/https://git.114514.pro/https://ghproxy.com/https://agent.imgg.dev/MaaAssistantArknights/MaaRelease/releases/download/v4.16.4/MAAComponent-OTA-v4.13.0_v4.16.4-win-x64.zip
+[2023-05-07 17:07:05.334] <1><> Start to download file from "https://ghproxy.com/https://git.114514.pro/https://ghproxy.com/https://agent.imgg.dev/MaaAssistantArknights/MaaRelease/releases/download/v4.16.4/MAAComponent-OTA-v4.13.0_v4.16.4-win-x64.zip" and save to D:\AutoMaa\Python\Special\MAA1\MAAComponent-OTA-v4.13.0_v4.16.4-win-x64.zip.temp
+[2023-05-07 17:07:05.750] <1><> HTTP: Forbidden GET https://ghproxy.com/https://git.114514.pro/https://ghproxy.com/https://agent.imgg.dev/MaaAssistantArknights/MaaRelease/releases/download/v4.16.4/MAAComponent-OTA-v4.13.0_v4.16.4-win-x64.zip
+[2023-05-07 17:07:05.751] <1><> Start to download file from "https://agent.imgg.dev/MaaAssistantArknights/MaaRelease/releases/download/v4.16.4/MAAComponent-OTA-v4.13.0_v4.16.4-win-x64.zip" and save to D:\AutoMaa\Python\Special\MAA1\MAAComponent-OTA-v4.13.0_v4.16.4-win-x64.zip.temp
+[2023-05-07 17:07:13.873] <1><> MaaAssistantArknights GUI exited
+[2023-05-07 17:07:13.873] <1><> 
+[2023-05-07 17:07:36.220] <1><> ===================================
+[2023-05-07 17:07:36.230] <1><> MaaAssistantArknights GUI started
+[2023-05-07 17:07:36.230] <1><> Maa ENV: Production
+[2023-05-07 17:07:36.232] <1><> ===================================
+[2023-05-07 17:07:36.451] <1><> Rebuild Default HttpClient with proxy 
+[2023-05-07 17:07:36.459] <1><> Rebuild Downloader HttpClient with proxy 
+[2023-05-07 17:07:36.825] <1><> Loading item list from D:\AutoMaa\Python\Special\MAA1\resource\item_index.json
+[2023-05-07 17:07:37.963] <1><> 正在停止……
+[2023-05-07 17:07:39.669] <12><> HTTP: OK GET https://ota.maa.plus/MaaAssistantArknights/api/lastUpdateTime.json
+[2023-05-07 17:07:51.911] <1><> Failed to send GET request to "https://api.github.com/repos/MaaAssistantArknights/MaaRelease/releases"
+System.Threading.Tasks.TaskCanceledException: 已取消一个任务。
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 MaaWpfGui.Services.Web.HttpService.<GetAsync>d__9.MoveNext()
+[2023-05-07 17:08:06.919] <11><> Failed to send GET request to "https://api.kgithub.com/repos/MaaAssistantArknights/MaaRelease/releases"
+System.Threading.Tasks.TaskCanceledException: 已取消一个任务。
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 MaaWpfGui.Services.Web.HttpService.<GetAsync>d__9.MoveNext()
+[2023-05-07 17:08:21.921] <11><> Failed to send GET request to "https://api.github.com/repos/MaaAssistantArknights/MaaRelease/releases"
+System.Threading.Tasks.TaskCanceledException: 已取消一个任务。
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 MaaWpfGui.Services.Web.HttpService.<GetAsync>d__9.MoveNext()
+[2023-05-07 17:08:23.129] <11><> HTTP: NotFound GET https://github.com/repos/MaaAssistantArknights/MaaRelease/releases
+[2023-05-07 17:08:37.790] <1><> 已停止
+[2023-05-07 17:08:38.132] <12><> Failed to send GET request to "https://api.github.com/repos/MaaAssistantArknights/MaaRelease/releases"
+System.Threading.Tasks.TaskCanceledException: 已取消一个任务。
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 MaaWpfGui.Services.Web.HttpService.<GetAsync>d__9.MoveNext()
+[2023-05-07 17:08:38.987] <10><> HTTP: NotFound GET https://github.com/repos/MaaAssistantArknights/MaaRelease/releases
+[2023-05-07 17:11:48.402] <1><> Failed to send GET request to "https://api.github.com/repos/MaaAssistantArknights/MaaRelease/releases"
+System.Threading.Tasks.TaskCanceledException: 已取消一个任务。
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 MaaWpfGui.Services.Web.HttpService.<GetAsync>d__9.MoveNext()
+[2023-05-07 17:11:52.227] <19><> HTTP: NotFound GET https://github.com/repos/MaaAssistantArknights/MaaRelease/releases
+[2023-05-07 17:12:07.228] <14><> Failed to send GET request to "https://api.github.com/repos/MaaAssistantArknights/MaaRelease/releases"
+System.Threading.Tasks.TaskCanceledException: 已取消一个任务。
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 MaaWpfGui.Services.Web.HttpService.<GetAsync>d__9.MoveNext()
+[2023-05-07 17:12:08.068] <14><> HTTP: NotFound GET https://github.com/repos/MaaAssistantArknights/MaaRelease/releases
+[2023-05-07 17:12:23.069] <14><> Failed to send GET request to "https://api.github.com/repos/MaaAssistantArknights/MaaRelease/releases"
+System.Threading.Tasks.TaskCanceledException: 已取消一个任务。
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 MaaWpfGui.Services.Web.HttpService.<GetAsync>d__9.MoveNext()
+[2023-05-07 17:12:38.069] <16><> Failed to send GET request to "https://api.kgithub.com/repos/MaaAssistantArknights/MaaRelease/releases"
+System.Threading.Tasks.TaskCanceledException: 已取消一个任务。
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 MaaWpfGui.Services.Web.HttpService.<GetAsync>d__9.MoveNext()
+[2023-05-07 17:27:40.856] <1><> Failed to send GET request to "https://api.github.com/repos/MaaAssistantArknights/MaaRelease/releases"
+System.Threading.Tasks.TaskCanceledException: 已取消一个任务。
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 MaaWpfGui.Services.Web.HttpService.<GetAsync>d__9.MoveNext()
+[2023-05-07 17:27:52.564] <5><> HTTP: NotFound GET https://github.com/repos/MaaAssistantArknights/MaaRelease/releases
+[2023-05-07 17:28:01.897] <22><> Failed to send GET request to "https://api.github.com/repos/MaaAssistantArknights/MaaRelease/releases"
+System.Net.Http.HttpRequestException: 将内容复制到流时出错。 ---> System.IO.IOException: 无法从传输连接中读取数据: 连接已关闭。
+   在 System.Net.ConnectStream.EndRead(IAsyncResult asyncResult)
+   在 System.Net.Http.HttpClientHandler.WebExceptionWrapperStream.EndRead(IAsyncResult asyncResult)
+   在 System.Net.Http.StreamToStreamCopy.BufferReadCallback(IAsyncResult ar)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 MaaWpfGui.Services.Web.HttpService.<GetAsync>d__9.MoveNext()
+[2023-05-07 17:28:06.446] <22><> Failed to send GET request to "https://api.kgithub.com/repos/MaaAssistantArknights/MaaRelease/releases"
+System.Net.Http.HttpRequestException: 发送请求时出错。 ---> System.Net.WebException: 无法连接到远程服务器 ---> System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。 127.0.0.1:26501
+   在 System.Net.Sockets.Socket.InternalEndConnect(IAsyncResult asyncResult)
+   在 System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   在 System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   在 System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 MaaWpfGui.Services.Web.HttpService.<GetAsync>d__9.MoveNext()
+[2023-05-07 17:28:08.752] <22><> Failed to send GET request to "https://api.github.com/repos/MaaAssistantArknights/MaaRelease/releases"
+System.Net.Http.HttpRequestException: 发送请求时出错。 ---> System.Net.WebException: 无法连接到远程服务器 ---> System.Net.Sockets.SocketException: 由于目标计算机积极拒绝，无法连接。 127.0.0.1:26501
+   在 System.Net.Sockets.Socket.InternalEndConnect(IAsyncResult asyncResult)
+   在 System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   在 System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   在 System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 MaaWpfGui.Services.Web.HttpService.<GetAsync>d__9.MoveNext()
+[2023-05-07 17:28:08.774] <10><> Failed to send GET request to "https://api.kgithub.com/repos/MaaAssistantArknights/MaaRelease/releases"
+System.Net.Http.HttpRequestException: 发送请求时出错。 ---> System.Net.WebException: 未能解析此远程名称: 'api.kgithub.com'
+   在 System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   在 System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 MaaWpfGui.Services.Web.HttpService.<GetAsync>d__9.MoveNext()
+[2023-05-07 17:28:33.151] <1><> MaaAssistantArknights GUI exited
+[2023-05-07 17:28:33.151] <1><> 
+[2023-05-07 20:00:01.110] <1><> ===================================
+[2023-05-07 20:00:01.110] <1><> MaaAssistantArknights GUI started
+[2023-05-07 20:00:01.110] <1><> Maa ENV: Production
+[2023-05-07 20:00:01.126] <1><> ===================================
+[2023-05-07 20:00:01.329] <1><> Rebuild Default HttpClient with proxy 
+[2023-05-07 20:00:01.329] <1><> Rebuild Downloader HttpClient with proxy 
+[2023-05-07 20:00:01.783] <1><> Loading item list from D:\AutoMaa\Python\Special\MAA1\resource\item_index.json
+[2023-05-07 20:00:01.908] <10><> HTTP: OK GET https://ota.maa.plus/MaaAssistantArknights/api/lastUpdateTime.json
+[2023-05-07 20:00:16.865] <1><> Failed to send GET request to "https://api.github.com/repos/MaaAssistantArknights/MaaRelease/releases"
+System.Threading.Tasks.TaskCanceledException: 已取消一个任务。
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 MaaWpfGui.Services.Web.HttpService.<GetAsync>d__9.MoveNext()
+[2023-05-07 20:00:32.347] <13><> Failed to send GET request to "https://api.kgithub.com/repos/MaaAssistantArknights/MaaRelease/releases"
+System.Threading.Tasks.TaskCanceledException: 已取消一个任务。
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 MaaWpfGui.Services.Web.HttpService.<GetAsync>d__9.MoveNext()
+[2023-05-07 20:00:47.348] <13><> Failed to send GET request to "https://api.github.com/repos/MaaAssistantArknights/MaaRelease/releases"
+System.Threading.Tasks.TaskCanceledException: 已取消一个任务。
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 MaaWpfGui.Services.Web.HttpService.<GetAsync>d__9.MoveNext()
+[2023-05-07 20:01:02.349] <3><> Failed to send GET request to "https://api.kgithub.com/repos/MaaAssistantArknights/MaaRelease/releases"
+System.Threading.Tasks.TaskCanceledException: 已取消一个任务。
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 MaaWpfGui.Services.Web.HttpService.<GetAsync>d__9.MoveNext()
+[2023-05-07 20:01:10.402] <14><> HTTP: OK GET https://api.github.com/repos/MaaAssistantArknights/MaaRelease/releases
+[2023-05-07 20:01:10.665] <1><> HTTP: OK GET https://api.github.com/repos/MaaAssistantArknights/MaaAssistantArknights/releases/tags/v4.16.4
+[2023-05-07 20:01:10.681] <1><> Start to download file from "https://agent.imgg.dev/MaaAssistantArknights/MaaRelease/releases/download/v4.16.4/MAAComponent-OTA-v4.13.0_v4.16.4-win-x64.zip" and save to D:\AutoMaa\Python\Special\MAA1\MAAComponent-OTA-v4.13.0_v4.16.4-win-x64.zip.temp
+[2023-05-07 20:01:18.613] <1><> Main windows log clear.
+[2023-05-07 20:01:18.613] <1><> 
+[2023-05-07 20:01:18.666] <1><> 正在连接模拟器……
+[2023-05-07 20:01:20.791] <1><> 正在运行中……
+[2023-05-07 20:01:20.791] <1><> 如果任务完全没有反应，请使用 设置 - 连接设置 - 强制替换 ADB，或打开 兼容性触控模式
+[2023-05-07 20:01:20.793] <1><> 开始任务：StartUp
+[2023-05-07 20:01:21.924] <1><> HTTP: OK GET https://agent.imgg.dev/MaaAssistantArknights/MaaRelease/releases/download/v4.16.4/MAAComponent-OTA-v4.13.0_v4.16.4-win-x64.zip
+[2023-05-07 20:01:21.944] <1><> Remove download temp file D:\AutoMaa\Python\Special\MAA1\MAAComponent-OTA-v4.13.0_v4.16.4-win-x64.zip.temp
+[2023-05-07 20:01:37.609] <1><> 游戏掉线，重新连接
+[2023-05-07 20:02:18.249] <1><> 任务出错：StartUp
+[2023-05-07 20:02:18.749] <1><> 开始任务：Recruit
+[2023-05-07 20:02:34.798] <1><> 出现错误，已返回
+[2023-05-07 20:02:34.798] <1><> 任务出错：Recruit
+[2023-05-07 20:02:35.299] <1><> 开始任务：Infrast
+[2023-05-07 20:05:28.775] <1><> 完成任务：Infrast
+[2023-05-07 20:05:29.275] <1><> 开始任务：Mall
+[2023-05-07 20:06:01.392] <1><> 任务出错：Mall
+[2023-05-07 20:06:01.892] <1><> 开始任务：Fight
+[2023-05-07 20:06:06.710] <1><> 任务出错：Fight
+[2023-05-07 20:06:06.710] <1><> 剿灭任务失败，将尝试使用剩余备选关卡，部分战斗设置将不生效
+[2023-05-07 20:06:07.211] <1><> 开始任务：Fight
+[2023-05-07 20:06:11.980] <1><> 任务出错：Fight
+[2023-05-07 20:06:11.980] <1><> 剿灭任务失败，将尝试使用剩余备选关卡，部分战斗设置将不生效
+[2023-05-07 20:06:12.481] <1><> 开始任务：Fight
+[2023-05-07 20:06:17.256] <1><> 任务出错：Fight
+[2023-05-07 20:06:17.256] <1><> 剿灭任务失败，将尝试使用剩余备选关卡，部分战斗设置将不生效
+[2023-05-07 20:06:17.756] <1><> 开始任务：Fight
+[2023-05-07 20:06:22.491] <1><> 任务出错：Fight
+[2023-05-07 20:06:22.491] <1><> 剿灭任务失败，将尝试使用剩余备选关卡，部分战斗设置将不生效
+[2023-05-07 20:06:22.992] <1><> 开始任务：Award
+[2023-05-07 20:06:38.938] <1><> 任务出错：Award
+[2023-05-07 20:06:39.439] <1><> 开始任务：Roguelike
+[2023-05-07 21:08:38.106] <1><> 完成任务：Roguelike
+[2023-05-07 21:08:38.480] <1><> 任务已全部完成！
+[2023-05-07 21:08:40.799] <1><> MaaAssistantArknights GUI exited
+[2023-05-07 21:08:40.799] <1><> 
+[2023-05-13 20:00:01.235] <1><> ===================================
+[2023-05-13 20:00:01.264] <1><> MaaAssistantArknights GUI started
+[2023-05-13 20:00:01.264] <1><> Maa ENV: Production
+[2023-05-13 20:00:01.266] <1><> ===================================
+[2023-05-13 20:00:02.236] <1><> Rebuild Default HttpClient with proxy 
+[2023-05-13 20:00:02.245] <1><> Rebuild Downloader HttpClient with proxy 
+[2023-05-13 20:00:11.654] <1><> Attempting to save configuration file after release, this is not allowed
+[2023-05-13 20:00:11.654] <1><> Failed to save configuration TaskQueue.开始唤醒.IsChecked to True
+[2023-05-13 20:00:11.654] <1><> Attempting to save configuration file after release, this is not allowed
+[2023-05-13 20:00:11.654] <1><> Failed to save configuration TaskQueue.自动公招.IsChecked to True
+[2023-05-13 20:00:11.654] <1><> Attempting to save configuration file after release, this is not allowed
+[2023-05-13 20:00:11.654] <1><> Failed to save configuration TaskQueue.基建换班.IsChecked to True
+[2023-05-13 20:00:11.654] <1><> Attempting to save configuration file after release, this is not allowed
+[2023-05-13 20:00:11.654] <1><> Failed to save configuration TaskQueue.刷理智.IsChecked to True
+[2023-05-13 20:00:11.654] <1><> Attempting to save configuration file after release, this is not allowed
+[2023-05-13 20:00:11.654] <1><> Failed to save configuration TaskQueue.获取信用及购物.IsChecked to True
+[2023-05-13 20:00:11.654] <1><> Attempting to save configuration file after release, this is not allowed
+[2023-05-13 20:00:11.654] <1><> Failed to save configuration TaskQueue.领取日常奖励.IsChecked to True
+[2023-05-13 20:00:11.654] <1><> Attempting to save configuration file after release, this is not allowed
+[2023-05-13 20:00:11.654] <1><> Failed to save configuration TaskQueue.自动肉鸽.IsChecked to True
+[2023-05-13 20:00:11.656] <1><> Loading item list from D:\AutoMaa\Python\Special\MAA1\resource\item_index.json
+[2023-05-13 20:00:11.715] <1><> Attempting to save configuration file after release, this is not allowed
+[2023-05-13 20:00:11.715] <1><> Failed to save configuration VersionUpdate.isfirstboot to False
+[2023-05-13 20:00:12.749] <11><> HTTP: OK GET https://ota.maa.plus/MaaAssistantArknights/api/lastUpdateTime.json
+[2023-05-13 20:00:12.810] <10><> HTTP: OK GET https://ota.maa.plus/MaaAssistantArknights/api/gui/StageActivity.json
+[2023-05-13 20:00:12.840] <11><> HTTP: OK GET https://ota.maa.plus/MaaAssistantArknights/api/resource/tasks.json
+[2023-05-13 20:00:13.886] <1><> Attempting to save configuration file after release, this is not allowed
+[2023-05-13 20:00:13.886] <1><> Failed to save configuration GUI.PositionAndSize.Load to True
+[2023-05-13 20:00:13.886] <1><> Attempting to save configuration file after release, this is not allowed
+[2023-05-13 20:00:13.886] <1><> Failed to save configuration GUI.PositionAndSize.SaveOnClosing to True
+[2023-05-13 20:00:13.887] <1><> Attempting to save configuration file after release, this is not allowed
+[2023-05-13 20:00:13.887] <1><> Failed to save configuration GUI.Monitor.Number to \\.\DISPLAY1
+[2023-05-13 20:00:13.887] <1><> Attempting to save configuration file after release, this is not allowed
+[2023-05-13 20:00:13.887] <1><> Failed to save configuration GUI.Monitor.Width to 1920
+[2023-05-13 20:00:13.887] <1><> Attempting to save configuration file after release, this is not allowed
+[2023-05-13 20:00:13.887] <1><> Failed to save configuration GUI.Monitor.Height to 1080
+[2023-05-13 20:00:13.887] <1><> Attempting to save configuration file after release, this is not allowed
+[2023-05-13 20:00:13.887] <1><> Failed to save configuration GUI.Position.Left to 142
+[2023-05-13 20:00:13.887] <1><> Attempting to save configuration file after release, this is not allowed
+[2023-05-13 20:00:13.887] <1><> Failed to save configuration GUI.Position.Top to 402
+[2023-05-13 20:00:13.887] <1><> Attempting to save configuration file after release, this is not allowed
+[2023-05-13 20:00:13.887] <1><> Failed to save configuration GUI.Size.Width to 800
+[2023-05-13 20:00:13.887] <1><> Attempting to save configuration file after release, this is not allowed
+[2023-05-13 20:00:13.887] <1><> Failed to save configuration GUI.Size.Height to 600
+[2023-05-13 20:00:14.028] <1><> Attempting to save configuration file after release, this is not allowed
+[2023-05-13 20:00:14.028] <1><> MaaAssistantArknights GUI exited
+[2023-05-13 20:00:14.028] <1><> 
+[2023-05-13 21:31:27.532] <1><> ===================================
+[2023-05-13 21:31:27.563] <1><> MaaAssistantArknights GUI started
+[2023-05-13 21:31:27.563] <1><> Maa ENV: Production
+[2023-05-13 21:31:27.565] <1><> ===================================
+[2023-05-13 21:31:27.786] <1><> Rebuild Default HttpClient with proxy 
+[2023-05-13 21:31:27.794] <1><> Rebuild Downloader HttpClient with proxy 
+[2023-05-13 21:31:28.072] <1><> Loading item list from D:\AutoMaa\Python\Special\MAA1\resource\item_index.json
+[2023-05-13 21:31:28.403] <10><> HTTP: OK GET https://ota.maa.plus/MaaAssistantArknights/api/lastUpdateTime.json
+[2023-05-13 21:31:28.455] <12><> HTTP: OK GET https://ota.maa.plus/MaaAssistantArknights/api/gui/StageActivity.json
+[2023-05-13 21:31:28.527] <10><> HTTP: OK GET https://ota.maa.plus/MaaAssistantArknights/api/resource/tasks.json
+[2023-05-13 21:31:32.755] <1><> 等待模拟器启动时间（秒）: 60s
+[2023-05-13 21:31:40.867] <1><> 正在停止……
+[2023-05-13 21:31:41.798] <1><> 已停止
+[2023-05-13 21:31:43.408] <1><> Failed to send GET request to "https://api.github.com/repos/MaaAssistantArknights/MaaRelease/releases"
+System.Threading.Tasks.TaskCanceledException: 已取消一个任务。
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 MaaWpfGui.Services.Web.HttpService.<GetAsync>d__9.MoveNext()
+[2023-05-13 21:31:43.940] <12><> HTTP: Forbidden GET https://api.kgithub.com/repos/MaaAssistantArknights/MaaRelease/releases
+[2023-05-13 21:31:58.963] <10><> Failed to send GET request to "https://api.github.com/repos/MaaAssistantArknights/MaaRelease/releases"
+System.Threading.Tasks.TaskCanceledException: 已取消一个任务。
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 MaaWpfGui.Services.Web.HttpService.<GetAsync>d__9.MoveNext()
+[2023-05-13 21:31:59.278] <9><> HTTP: Forbidden GET https://api.kgithub.com/repos/MaaAssistantArknights/MaaRelease/releases
+[2023-05-13 21:32:14.282] <9><> Failed to send GET request to "https://api.github.com/repos/MaaAssistantArknights/MaaRelease/releases"
+System.Threading.Tasks.TaskCanceledException: 已取消一个任务。
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 MaaWpfGui.Services.Web.HttpService.<GetAsync>d__9.MoveNext()
+[2023-05-13 21:32:14.558] <3><> HTTP: Forbidden GET https://api.kgithub.com/repos/MaaAssistantArknights/MaaRelease/releases
+[2023-05-13 21:32:53.056] <1><> MaaAssistantArknights GUI exited
+[2023-05-13 21:32:53.056] <1><> 
