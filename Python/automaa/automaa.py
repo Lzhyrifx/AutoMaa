@@ -76,15 +76,19 @@ def test(x, y):  # 判断进程是否存活
 
 def gui_log(file, log, log_bak):  # 整理日志
     try:
-        with open(file, 'r', encoding='utf-8', errors='ignore') as f1:
-            read = f1.readlines()  # 读取日志文件
-            with open(log, 'a+', encoding='utf-8', errors='ignore') as f2:
-                f2.write(line + ("{:=^106s}".format(data)) + '\n' + line + '\n')  # 分割线
-                for i in read:
-                    f2.write(i)  # 遍历内容
-                f2.write('\n')
-            count = len(open(log, 'r', encoding='utf-8', errors='ignore').readlines())  # 读取文件行数
-            open(file, 'w').close()
+        try:
+            with open(file, 'r', encoding='utf-8', errors='ignore') as f1:
+                read = f1.readlines()  # 读取日志文件
+                with open(log, 'a+', encoding='utf-8', errors='ignore') as f2:
+                    f2.write(line + ("{:=^106s}".format(data)) + '\n' + line + '\n')  # 分割线
+                    for i in read:
+                        f2.write(i)  # 遍历内容
+                    f2.write('\n')
+                count = len(open(log, 'r', encoding='utf-8', errors='ignore').readlines())  # 读取文件行数
+                open(file, 'w').close()
+        except FileNotFoundError:
+            with open(file, 'w', encoding='utf-8') as f:
+                pass
         if count > 1000:  # 行数超过1000行转移日志内容
             with open(log, 'r', encoding='utf-8', errors='ignore') as f3:
                 cache = f3.readlines()
