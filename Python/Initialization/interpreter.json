@@ -1,0 +1,11 @@
+{
+    "vbs": {
+        "environment": "Python",
+        "environment_name": "AutoMaa"
+    },
+    "rougelike": {
+        "mode": "Normal",
+        "relay": "False"
+    },
+    "source": "D:"
+}
